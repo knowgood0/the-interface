@@ -1,0 +1,18 @@
+{
+  "name": "the-interface",
+  "version": "0.1.0",
+  "description": "The Interface \u2014 practical AI & technology publication",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "discover": "node scripts/discover-topics.js",
+    "build": "node scripts/build-static.js",
+    "automation-check": "node scripts/check-automation.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}

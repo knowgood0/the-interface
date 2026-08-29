@@ -1,0 +1,11 @@
+name = "the-interface-publisher"
+main = "worker.js"
+compatibility_date = "2026-08-28"
+
+[triggers]
+# Four runs per UTC day. The worker itself enforces DAILY_ARTICLE_LIMIT.
+crons = ["0 9,15,21,3 * * *"]
+
+[vars]
+GITHUB_BRANCH = "main"
+DAILY_ARTICLE_LIMIT = "4"

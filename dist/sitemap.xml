@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+    
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.com/about</loc>
+    
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://example.com/contact</loc>
+    
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://example.com/category/ai-tools</loc>
+    
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/category/explainers</loc>
+    
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/category/industry</loc>
+    
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/category/guides</loc>
+    
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/article/reduce-ai-hallucinations-practical-guide</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/article/ai-chatbot-memory-explained</loc>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/article/compare-ai-writing-assistants</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/article/ai-agents-vs-chatbots-difference</loc>
+    <lastmod>2026-08-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/article/small-teams-shipping-ai-features</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>The Interface</title>
+  <link>https://example.com</link>
+  <description>Practical, plain-language coverage of AI and technology — how tools actually work, what&apos;s worth using, and what&apos;s happening in the industry behind them.</description>
+  <item>
+    <title>A Practical Guide to Getting Fewer Wrong Answers From AI Tools</title>
+    <link>https://example.com/article/reduce-ai-hallucinations-practical-guide</link>
+    <guid>https://example.com/article/reduce-ai-hallucinations-practical-guide</guid>
+    <pubDate>Fri, 14 Aug 2026 09:00:00 GMT</pubDate>
+    <description>You can&apos;t eliminate AI mistakes entirely, but a handful of habits meaningfully reduce how often they happen.</description>
+  </item>
+  <item>
+    <title>Why Your AI Chatbot &apos;Forgets&apos; Things — and What&apos;s Actually Going On</title>
+    <link>https://example.com/article/ai-chatbot-memory-explained</link>
+    <guid>https://example.com/article/ai-chatbot-memory-explained</guid>
+    <pubDate>Mon, 10 Aug 2026 09:00:00 GMT</pubDate>
+    <description>Chat assistants feel like they have memory, then suddenly don&apos;t. Here&apos;s the mechanical reason, and what&apos;s changing.</description>
+  </item>
+  <item>
+    <title>Picking an AI Writing Tool: What Actually Differs Between Them</title>
+    <link>https://example.com/article/compare-ai-writing-assistants</link>
+    <guid>https://example.com/article/compare-ai-writing-assistants</guid>
+    <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
+    <description>Most comparisons focus on benchmarks. Here&apos;s what matters if you&apos;re actually going to use one daily.</description>
+  </item>
+  <item>
+    <title>&apos;AI Agents&apos; Are Everywhere Now. Here&apos;s What Actually Makes Something an Agent.</title>
+    <link>https://example.com/article/ai-agents-vs-chatbots-difference</link>
+    <guid>https://example.com/article/ai-agents-vs-chatbots-difference</guid>
+    <pubDate>Sat, 01 Aug 2026 09:00:00 GMT</pubDate>
+    <description>The term gets used loosely. The real distinction is about what the system is allowed to do without you.</description>
+  </item>
+  <item>
+    <title>How Small Teams Are Shipping AI Features Without a Dedicated ML Team</title>
+    <link>https://example.com/article/small-teams-shipping-ai-features</link>
+    <guid>https://example.com/article/small-teams-shipping-ai-features</guid>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+    <description>You no longer need a research team to add AI features to a product. Here&apos;s what the actual stack looks like.</description>
+  </item>
+</channel>
+</rss>

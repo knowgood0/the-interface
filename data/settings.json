@@ -1,0 +1,12 @@
+{
+  "siteName": "The Interface",
+  "tagline": "Where people and technology meet.",
+  "description": "Practical, plain-language coverage of AI and technology — how tools actually work, what's worth using, and what's happening in the industry behind them.",
+  "domain": "https://example.com",
+  "twitterHandle": "@theinterface",
+  "adsenseClientId": "",
+  "adsensePublisherEnabled": false,
+  "newsletterProvider": "",
+  "newsletterEndpoint": "",
+  "adminPasswordHash": ""
+}

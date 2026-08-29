@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "ai-tools",
+    "name": "AI Tools",
+    "description": "Hands-on coverage of AI products people actually use — what they're good at, what they're not, and how to get more out of them.",
+    "color": "#3B5BFF"
+  },
+  {
+    "slug": "explainers",
+    "name": "Explainers",
+    "description": "Plain-language breakdowns of technical concepts, without the jargon or the hype.",
+    "color": "#0F9D8A"
+  },
+  {
+    "slug": "industry",
+    "name": "Industry & Business",
+    "description": "What's happening in tech companies, funding, product launches, and the business decisions behind them.",
+    "color": "#B54708"
+  },
+  {
+    "slug": "guides",
+    "name": "Guides",
+    "description": "Step-by-step, practical walkthroughs for getting something specific done.",
+    "color": "#7A3FE0"
+  }
+]
