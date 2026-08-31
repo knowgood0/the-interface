@@ -8,7 +8,11 @@
     "competition": "medium",
     "suggestedTitle": "A Practical AI Workflow for Getting More Done Without Adding More Apps",
     "suggestedType": "guide",
-    "relatedKeywords": ["AI workflow", "AI productivity", "AI tools"],
+    "relatedKeywords": [
+      "AI workflow",
+      "AI productivity",
+      "AI tools"
+    ],
     "sourceType": "editorial",
     "sources": [],
     "evergreenOrTrending": "evergreen",
@@ -25,7 +29,11 @@
     "competition": "medium",
     "suggestedTitle": "What the New AI Term Actually Means in Practice",
     "suggestedType": "explainer",
-    "relatedKeywords": ["AI explained", "what is AI", "how AI works"],
+    "relatedKeywords": [
+      "AI explained",
+      "what is AI",
+      "how AI works"
+    ],
     "sourceType": "editorial",
     "sources": [],
     "evergreenOrTrending": "evergreen",
