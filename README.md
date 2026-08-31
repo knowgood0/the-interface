@@ -272,3 +272,5 @@ works" number, not a plan.
    history than a day-old site.
 5. Run `npm run discover` weekly-ish and use the `/admin/topics` queue as
    your actual editorial calendar input, not a fire-and-forget automation.
+
+<!-- deployment test -->
