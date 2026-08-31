@@ -1,0 +1,36 @@
+[
+  {
+    "id": "evergreen-ai-workflows",
+    "topic": "Practical AI workflows for everyday work",
+    "category": "guides",
+    "whyTrending": "Readers consistently search for concrete ways to use AI to complete common tasks faster.",
+    "searchOpportunity": "high",
+    "competition": "medium",
+    "suggestedTitle": "A Practical AI Workflow for Getting More Done Without Adding More Apps",
+    "suggestedType": "guide",
+    "relatedKeywords": ["AI workflow", "AI productivity", "AI tools"],
+    "sourceType": "editorial",
+    "sources": [],
+    "evergreenOrTrending": "evergreen",
+    "priorityScore": 70,
+    "status": "idea",
+    "discoveredAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "ai-explainer",
+    "topic": "Plain-language explanations of new AI concepts",
+    "category": "explainers",
+    "whyTrending": "New AI terminology appears constantly and readers need concise explanations of what the terms mean in practice.",
+    "searchOpportunity": "high",
+    "competition": "medium",
+    "suggestedTitle": "What the New AI Term Actually Means in Practice",
+    "suggestedType": "explainer",
+    "relatedKeywords": ["AI explained", "what is AI", "how AI works"],
+    "sourceType": "editorial",
+    "sources": [],
+    "evergreenOrTrending": "evergreen",
+    "priorityScore": 65,
+    "status": "idea",
+    "discoveredAt": "2026-08-29T00:00:00Z"
+  }
+]
