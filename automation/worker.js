@@ -72,10 +72,7 @@ async function fetchFeed(feed) {
 
     return parseItems(xml)
       .slice(0, 8)
-      .map((item) => ({
-        ...item,
-        feed,
-      }));
+      .map((item) => ({ ...item, feed }));
   } catch (error) {
     console.log(`Feed failed: ${feed.url}`, error.message);
     return [];
@@ -90,14 +87,12 @@ function normalizeTitle(title) {
 }
 
 function slugify(value) {
-  return (
-    cleanText(value)
-      .toLowerCase()
-      .replace(/['’]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '')
-      .slice(0, 80) || `article-${Date.now()}`
-  );
+  return cleanText(value)
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80) || `article-${Date.now()}`;
 }
 
 function escapeJsonString(value) {
@@ -115,9 +110,7 @@ async function groqGenerate(env, prompt) {
       model: env.GROQ_MODEL || 'openai/gpt-oss-120b',
       temperature: 0.35,
       max_tokens: 6000,
-      response_format: {
-        type: 'json_object',
-      },
+      response_format: { type: 'json_object' },
       messages: [
         {
           role: 'system',
@@ -161,6 +154,7 @@ function githubHeaders(env) {
 
 function base64Decode(value) {
   const binary = atob(value);
+
   const bytes = Uint8Array.from(
     binary,
     (c) => c.charCodeAt(0)
@@ -194,8 +188,8 @@ async function getRepoFile(env, path) {
   const branch = env.GITHUB_BRANCH || 'main';
 
   const url =
-    `${GITHUB_API}/repos/${encodeURIComponent(owner)}` +
-    `/${encodeURIComponent(repo)}/contents/${path}` +
+    `${GITHUB_API}/repos/${encodeURIComponent(owner)}/` +
+    `${encodeURIComponent(repo)}/contents/${path}` +
     `?ref=${encodeURIComponent(branch)}`;
 
   const res = await fetch(url, {
@@ -219,16 +213,13 @@ async function getRepoFile(env, path) {
 }
 
 async function githubJson(path, init, env) {
-  const res = await fetch(
-    `${GITHUB_API}${path}`,
-    {
-      ...init,
-      headers: {
-        ...githubHeaders(env),
-        ...(init?.headers || {}),
-      },
-    }
-  );
+  const res = await fetch(`${GITHUB_API}${path}`, {
+    ...init,
+    headers: {
+      ...githubHeaders(env),
+      ...(init?.headers || {}),
+    },
+  });
 
   const text = await res.text();
 
@@ -288,6 +279,7 @@ async function commitFiles(env, files, message) {
   const branch = env.GITHUB_BRANCH || 'main';
 
   const state = await getBranchState(env);
+
   const treeEntries = [];
 
   for (const file of files) {
@@ -360,7 +352,7 @@ async function commitFiles(env, files, message) {
 
   const refPath =
     `/repos/${owner}/${repo}/git/refs/heads/` +
-    encodeURIComponent(branch);
+    `${encodeURIComponent(branch)}`;
 
   await githubJson(
     refPath,
@@ -380,6 +372,19 @@ async function commitFiles(env, files, message) {
   return commit;
 }
 
+/*
+ * Wikimedia Commons image search.
+ *
+ * The previous version searched once and accepted only the first
+ * qualifying result. This version:
+ *
+ * 1. Searches up to 20 results.
+ * 2. Checks multiple results.
+ * 3. Allows a slightly wider landscape ratio.
+ * 4. Tries multiple search queries.
+ * 5. Skips bad/oversized images instead of failing immediately.
+ */
+
 async function searchCommons(query) {
   const url = new URL(COMMONS_API);
 
@@ -387,11 +392,11 @@ async function searchCommons(query) {
   url.searchParams.set('generator', 'search');
   url.searchParams.set('gsrsearch', query);
   url.searchParams.set('gsrnamespace', '6');
-  url.searchParams.set('gsrlimit', '12');
+  url.searchParams.set('gsrlimit', '20');
   url.searchParams.set('prop', 'imageinfo');
   url.searchParams.set(
     'iiprop',
-    'url|extmetadata|mime|size'
+    'url|extmetadata|mime|size|width|height'
   );
   url.searchParams.set('iiurlwidth', '1600');
   url.searchParams.set('format', 'json');
@@ -401,7 +406,8 @@ async function searchCommons(query) {
     url.toString(),
     {
       headers: {
-        'User-Agent': 'TheInterfacePublisher/1.0',
+        'User-Agent':
+          'TheInterfacePublisher/1.0',
       },
     }
   );
@@ -413,14 +419,18 @@ async function searchCommons(query) {
   }
 
   const data = await res.json();
+
   const pages = Object.values(
     data.query?.pages || {}
   );
 
-  const allowed = pages
+  return pages
     .map((p) => {
-      const info = p.imageinfo?.[0] || {};
-      const meta = info.extmetadata || {};
+      const info =
+        p.imageinfo?.[0] || {};
+
+      const meta =
+        info.extmetadata || {};
 
       const license = cleanText(
         meta.LicenseShortName?.value || ''
@@ -428,19 +438,20 @@ async function searchCommons(query) {
 
       const author = cleanText(
         meta.Artist?.value ||
-          meta.Credit?.value ||
-          'Wikimedia Commons contributor'
+        meta.Credit?.value ||
+        'Wikimedia Commons contributor'
       );
 
       const description = cleanText(
         meta.ImageDescription?.value ||
-          p.title.replace(/^File:/, '')
+        p.title.replace(/^File:/, '')
       );
 
       return {
         title: p.title,
         imageUrl:
-          info.thumburl || info.url,
+          info.thumburl ||
+          info.url,
         pageUrl:
           `https://commons.wikimedia.org/wiki/` +
           encodeURIComponent(
@@ -456,20 +467,48 @@ async function searchCommons(query) {
       };
     })
     .filter(
-      (x) =>
-        x.imageUrl &&
-        x.width >= 1000 &&
-        x.height >= 500 &&
-        x.height / x.width >= 0.45 &&
-        x.height / x.width <= 0.8
+      (x) => x.imageUrl
     )
-    .filter((x) =>
-      /CC BY|CC BY-SA|CC0|Public domain|PD/i.test(
-        x.license
-      )
-    );
+    .filter(
+      (x) =>
+        /CC BY|CC BY-SA|CC0|Public domain|PD/i.test(
+          x.license
+        )
+    )
+    .filter(
+      (x) =>
+        x.width >= 800 &&
+        x.height >= 400
+    )
+    .sort((a, b) => {
+      const aRatio =
+        a.height / a.width;
 
-  return allowed[0] || null;
+      const bRatio =
+        b.height / b.width;
+
+      const aLandscape =
+        aRatio >= 0.40 &&
+        aRatio <= 0.85;
+
+      const bLandscape =
+        bRatio >= 0.40 &&
+        bRatio <= 0.85;
+
+      if (
+        aLandscape !==
+        bLandscape
+      ) {
+        return aLandscape
+          ? -1
+          : 1;
+      }
+
+      return (
+        b.width * b.height -
+        a.width * a.height
+      );
+    });
 }
 
 async function downloadImage(image) {
@@ -477,7 +516,8 @@ async function downloadImage(image) {
     image.imageUrl,
     {
       headers: {
-        'User-Agent': 'TheInterfacePublisher/1.0',
+        'User-Agent':
+          'TheInterfacePublisher/1.0',
       },
     }
   );
@@ -488,18 +528,24 @@ async function downloadImage(image) {
     );
   }
 
-  const bytes = new Uint8Array(
-    await res.arrayBuffer()
-  );
+  const bytes =
+    new Uint8Array(
+      await res.arrayBuffer()
+    );
 
-  if (bytes.byteLength > MAX_IMAGE_BYTES) {
+  if (
+    bytes.byteLength >
+    MAX_IMAGE_BYTES
+  ) {
     throw new Error(
       'Selected image is too large'
     );
   }
 
   const type = (
-    res.headers.get('content-type') ||
+    res.headers.get(
+      'content-type'
+    ) ||
     image.mime ||
     'image/jpeg'
   )
@@ -522,20 +568,102 @@ async function downloadImage(image) {
   };
 }
 
+async function findReusableImage(
+  queries
+) {
+  const tried =
+    new Set();
+
+  for (
+    const rawQuery of queries
+  ) {
+    const query =
+      cleanText(rawQuery);
+
+    if (
+      !query ||
+      tried.has(
+        query.toLowerCase()
+      )
+    ) {
+      continue;
+    }
+
+    tried.add(
+      query.toLowerCase()
+    );
+
+    try {
+      console.log(
+        `Searching Wikimedia Commons: ${query}`
+      );
+
+      const results =
+        await searchCommons(
+          query
+        );
+
+      console.log(
+        `Commons returned ${results.length} usable candidates for: ${query}`
+      );
+
+      for (
+        const image of results
+      ) {
+        try {
+          const downloaded =
+            await downloadImage(
+              image
+            );
+
+          console.log(
+            `Selected Commons image: ${image.title}`
+          );
+
+          return {
+            image,
+            downloaded,
+          };
+        } catch (error) {
+          console.log(
+            `Skipping image ${image.title}: ${error.message}`
+          );
+        }
+      }
+    } catch (error) {
+      console.log(
+        `Commons query failed: ${query}`,
+        error.message
+      );
+    }
+  }
+
+  return null;
+}
+
 async function buildCandidateTopics() {
-  const results = await Promise.all(
-    DEFAULT_FEEDS.map(fetchFeed)
-  );
+  const results =
+    await Promise.all(
+      DEFAULT_FEEDS.map(
+        fetchFeed
+      )
+    );
 
   return results
     .flat()
     .filter(
-      (x) => x.title && x.link
+      (x) =>
+        x.title &&
+        x.link
     )
     .sort(
       (a, b) =>
-        new Date(b.pubDate || 0) -
-        new Date(a.pubDate || 0)
+        new Date(
+          b.pubDate || 0
+        ) -
+        new Date(
+          a.pubDate || 0
+        )
     );
 }
 
@@ -543,17 +671,23 @@ function alreadyPublished(
   articleList,
   candidate
 ) {
-  const title = normalizeTitle(
-    candidate.title ||
+  const title =
+    normalizeTitle(
+      candidate.title ||
       candidate.topic ||
       ''
-  );
+    );
 
   return articleList.some(
     (a) =>
-      normalizeTitle(a.title) === title ||
-      (a.sourceUrl &&
-        a.sourceUrl === candidate.link)
+      normalizeTitle(
+        a.title
+      ) === title ||
+      (
+        a.sourceUrl &&
+        a.sourceUrl ===
+          candidate.link
+      )
   );
 }
 
@@ -579,12 +713,14 @@ async function runAutomation(env) {
     );
   }
 
-  const dailyLimit = Math.max(
-    1,
-    Number(
-      env.DAILY_ARTICLE_LIMIT || 4
-    )
-  );
+  const dailyLimit =
+    Math.max(
+      1,
+      Number(
+        env.DAILY_ARTICLE_LIMIT ||
+        4
+      )
+    );
 
   const articlesFile =
     await getRepoFile(
@@ -592,9 +728,10 @@ async function runAutomation(env) {
       'data/articles.json'
     );
 
-  const articles = JSON.parse(
-    articlesFile.text
-  );
+  const articles =
+    JSON.parse(
+      articlesFile.text
+    );
 
   const today =
     new Date()
@@ -604,14 +741,17 @@ async function runAutomation(env) {
   const publishedToday =
     articles.filter(
       (a) =>
-        a.status === 'published' &&
+        a.status ===
+          'published' &&
         String(
           a.publishedAt || ''
-        ).slice(0, 10) === today
+        ).slice(0, 10) ===
+          today
     ).length;
 
   if (
-    publishedToday >= dailyLimit
+    publishedToday >=
+    dailyLimit
   ) {
     return {
       skipped: true,
@@ -627,9 +767,10 @@ async function runAutomation(env) {
       'data/topics.json'
     );
 
-  const topics = JSON.parse(
-    topicsFile.text
-  );
+  const topics =
+    JSON.parse(
+      topicsFile.text
+    );
 
   const candidates =
     await buildCandidateTopics();
@@ -643,29 +784,32 @@ async function runAutomation(env) {
         )
     );
 
-  const queued = topics
-    .filter(
-      (t) =>
-        t.status === 'idea' &&
-        !articles.some(
-          (a) =>
-            normalizeTitle(
-              a.title
-            ) ===
-            normalizeTitle(
-              t.suggestedTitle
-            )
-        )
-    )
-    .sort(
-      (a, b) =>
-        Number(
-          b.priorityScore || 0
-        ) -
-        Number(
-          a.priorityScore || 0
-        )
-    );
+  const queued =
+    topics
+      .filter(
+        (t) =>
+          t.status === 'idea' &&
+          !articles.some(
+            (a) =>
+              normalizeTitle(
+                a.title
+              ) ===
+              normalizeTitle(
+                t.suggestedTitle
+              )
+          )
+      )
+      .sort(
+        (a, b) =>
+          Number(
+            b.priorityScore ||
+              0
+          ) -
+          Number(
+            a.priorityScore ||
+              0
+          )
+      );
 
   const chosen =
     unusedFeedItems[0] ||
@@ -674,7 +818,8 @@ async function runAutomation(env) {
   if (!chosen) {
     return {
       skipped: true,
-      reason: 'no-new-topic',
+      reason:
+        'no-new-topic',
     };
   }
 
@@ -683,7 +828,8 @@ async function runAutomation(env) {
     ...unusedFeedItems
       .filter(
         (x) =>
-          x.link !== chosen.link
+          x.link !==
+          chosen.link
       )
       .slice(0, 3),
   ];
@@ -708,7 +854,9 @@ Description: ${cleanText(
   const existingTitles =
     articles
       .slice(0, 80)
-      .map((a) => a.title)
+      .map(
+        (a) => a.title
+      )
       .join('\n- ');
 
   const categories =
@@ -777,7 +925,9 @@ ${sourceMaterial}`
         )
     );
 
-  if (duplicateTitle) {
+  if (
+    duplicateTitle
+  ) {
     throw new Error(
       'Groq returned a duplicate title'
     );
@@ -790,7 +940,8 @@ ${sourceMaterial}`
 
   if (
     articles.some(
-      (a) => a.slug === slug
+      (a) =>
+        a.slug === slug
     )
   ) {
     throw new Error(
@@ -798,48 +949,50 @@ ${sourceMaterial}`
     );
   }
 
+  /*
+   * Build several increasingly broad image searches.
+   * This is the main fix for the previous
+   * "No reusable Wikimedia Commons image found"
+   * error.
+   */
   const imageQueries = [
     generated.imageSearchQuery,
     generated.title,
-    `${generated.category} ${
-      Array.isArray(
-        generated.tags
-      )
-        ? generated.tags
-            .slice(0, 3)
-            .join(' ')
-        : ''
-    }`,
+    chosen.title,
+
+    Array.isArray(
+      generated.tags
+    )
+      ? generated.tags
+          .slice(0, 3)
+          .join(' ')
+      : '',
+
+    `${generated.category} technology`,
+    'technology',
   ]
     .map(cleanText)
     .filter(Boolean);
 
-  let image = null;
+  const imageResult =
+    await findReusableImage(
+      imageQueries
+    );
 
-  for (
-    const query of imageQueries
+  if (
+    !imageResult
   ) {
-    image =
-      await searchCommons(
-        query
-      );
-
-    if (image) break;
-  }
-
-  if (!image) {
     throw new Error(
-      `No reusable Wikimedia Commons image found for: ${
-        imageQueries[0] ||
-        generated.title
-      }`
+      `No reusable Wikimedia Commons image found after trying: ${imageQueries.join(
+        ' | '
+      )}`
     );
   }
 
-  const downloaded =
-    await downloadImage(
-      image
-    );
+  const {
+    image,
+    downloaded,
+  } = imageResult;
 
   const imagePath =
     `public/images/articles/${slug}.${downloaded.ext}`;
@@ -864,21 +1017,26 @@ ${sourceMaterial}`
       )
         ? generated.category
         : 'ai-tools',
+
     tags:
       Array.isArray(
         generated.tags
       )
         ? generated.tags
-            .map((x) =>
-              cleanText(x)
+            .map(
+              (x) =>
+                cleanText(x)
             )
             .filter(Boolean)
             .slice(0, 8)
         : ['ai'],
+
     author:
       'editorial-desk',
+
     status:
       'published',
+
     articleType:
       [
         'article',
@@ -891,96 +1049,127 @@ ${sourceMaterial}`
       )
         ? generated.articleType
         : 'analysis',
+
     publishedAt: now,
     updatedAt: now,
+
     featuredImage:
       `/images/articles/${slug}.${downloaded.ext}`,
+
     featuredImageAlt:
       escapeJsonString(
         generated.imageAlt ||
-          image.description
+        image.description
       ),
+
     imageCredit:
       `${image.author} — ${image.license}`,
+
     imageSourceUrl:
       image.pageUrl,
+
     sources:
       Array.isArray(
         generated.sources
       ) &&
       generated.sources.length
-        ? generated.sources
-            .slice(0, 8)
+        ? generated.sources.slice(
+            0,
+            8
+          )
         : [
             {
-              name: 'Source',
-              url: chosen.link,
+              name:
+                'Source',
+              url:
+                chosen.link,
             },
           ],
+
     sourceUrl:
       chosen.link,
+
     generatedBy:
       'groq',
+
     body:
       generated.body
-        .map((p) =>
-          escapeJsonString(p)
+        .map(
+          (p) =>
+            escapeJsonString(
+              p
+            )
         )
         .filter(
-          (p) => p.length > 0
+          (p) =>
+            p.length > 0
         ),
   };
 
-  articles.push(article);
+  articles.push(
+    article
+  );
 
   const updatedTopics =
-    topics.map((t) => {
-      if (
-        chosen.id &&
-        t.id === chosen.id
-      ) {
-        return {
-          ...t,
-          status: 'published',
-          publishedAt: now,
-          publishedArticleId:
-            article.id,
-        };
+    topics.map(
+      (t) => {
+        if (
+          chosen.id &&
+          t.id ===
+            chosen.id
+        ) {
+          return {
+            ...t,
+            status:
+              'published',
+            publishedAt:
+              now,
+            publishedArticleId:
+              article.id,
+          };
+        }
+
+        return t;
       }
+    );
 
-      return t;
-    });
+  const commitFilesList =
+    [
+      {
+        path:
+          'data/articles.json',
+        kind:
+          'text',
+        content:
+          JSON.stringify(
+            articles,
+            null,
+            2
+          ) + '\n',
+      },
 
-  const commitFilesList = [
-    {
-      path:
-        'data/articles.json',
-      kind: 'text',
-      content:
-        JSON.stringify(
-          articles,
-          null,
-          2
-        ) + '\n',
-    },
-    {
-      path:
-        'data/topics.json',
-      kind: 'text',
-      content:
-        JSON.stringify(
-          updatedTopics,
-          null,
-          2
-        ) + '\n',
-    },
-    {
-      path: imagePath,
-      kind: 'binary',
-      bytes:
-        downloaded.bytes,
-    },
-  ];
+      {
+        path:
+          'data/topics.json',
+        kind:
+          'text',
+        content:
+          JSON.stringify(
+            updatedTopics,
+            null,
+            2
+          ) + '\n',
+      },
+
+      {
+        path:
+          imagePath,
+        kind:
+          'binary',
+        bytes:
+          downloaded.bytes,
+      },
+    ];
 
   const commit =
     await commitFiles(
@@ -990,19 +1179,27 @@ ${sourceMaterial}`
     );
 
   return {
-    published: true,
+    published:
+      true,
+
     article: {
-      id: article.id,
-      title: article.title,
-      slug: article.slug,
+      id:
+        article.id,
+      title:
+        article.title,
+      slug:
+        article.slug,
     },
+
     image: {
-      path: imagePath,
+      path:
+        imagePath,
       credit:
         article.imageCredit,
       source:
         image.pageUrl,
     },
+
     commit:
       commit.sha,
   };
@@ -1015,9 +1212,10 @@ function cryptoRandomId() {
     );
 
   return [...bytes]
-    .map((b) =>
-      b.toString(16)
-        .padStart(2, '0')
+    .map(
+      (b) =>
+        b.toString(16)
+          .padStart(2, '0')
     )
     .join('');
 }
@@ -1071,7 +1269,9 @@ export default {
             env
           )
         );
-      } catch (error) {
+      } catch (
+        error
+      ) {
         console.error(
           error
         );
@@ -1089,7 +1289,9 @@ export default {
 
     return new Response(
       'The Interface publisher worker is running.',
-      { status: 200 }
+      {
+        status: 200,
+      }
     );
   },
 
@@ -1099,13 +1301,16 @@ export default {
     ctx
   ) {
     ctx.waitUntil(
-      runAutomation(env)
-        .catch((error) => {
+      runAutomation(
+        env
+      ).catch(
+        (error) => {
           console.error(
             'Scheduled publishing failed:',
             error
           );
-        })
+        }
+      )
     );
   },
 };
