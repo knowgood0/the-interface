@@ -40,7 +40,9 @@
     "sources": [],
     "evergreenOrTrending": "evergreen",
     "priorityScore": 65,
-    "status": "idea",
-    "discoveredAt": "2026-08-29T00:00:00Z"
+    "status": "published",
+    "discoveredAt": "2026-08-29T00:00:00Z",
+    "publishedAt": "2026-09-06T15:00:23.672Z",
+    "publishedArticleId": "ba1ebe054ccdb2550010d453"
   }
 ]
