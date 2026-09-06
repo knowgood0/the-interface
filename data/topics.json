@@ -17,8 +17,10 @@
     "sources": [],
     "evergreenOrTrending": "evergreen",
     "priorityScore": 70,
-    "status": "idea",
-    "discoveredAt": "2026-08-29T00:00:00Z"
+    "status": "published",
+    "discoveredAt": "2026-08-29T00:00:00Z",
+    "publishedAt": "2026-09-06T09:00:39.157Z",
+    "publishedArticleId": "c1acd941fe82615192b60b6c"
   },
   {
     "id": "ai-explainer",
