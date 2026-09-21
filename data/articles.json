@@ -1821,5 +1821,59 @@
       "Together, the watermarking research and the meteor‑tracking breach illustrate a dual front that law firms must defend. On one side, AI‑specific vulnerabilities—such as prompt‑injection attacks that exploit watermarking—create a new attack surface. On the other, conventional ransomware or intrusion tactics can disrupt the very infrastructure that hosts AI services. Firms should therefore adopt layered security: regular model behavior audits, prompt‑engineering guidelines, encryption of client data, and incident‑response playbooks that cover both AI‑related and classic cyber incidents. Vendor contracts should also require transparency about any built‑in tracing or watermarking features.",
       "Practically, legal teams should start by questioning AI vendor claims and requesting independent security assessments before integrating tools like Astra or GO Public. Training lawyers and staff on the limits of AI, especially how malicious prompts can alter outputs, reduces the risk of accidental misuse. Maintaining offline backups of critical documents and ensuring that AI‑generated work is reviewed by qualified attorneys adds an extra safety net. As regulators begin to focus on AI governance, firms that proactively address these risks will not only protect client confidentiality but also gain a competitive edge in a market that increasingly values responsible AI adoption."
     ]
+  },
+  {
+    "id": "bb165e976fd976028c7ff58f",
+    "slug": "how-ai-is-reshaping-ipo-workflows-and-legal-practice-while-raising-new-safety-co",
+    "title": "How AI Is Reshaping IPO Workflows and Legal Practice While Raising New Safety Concerns",
+    "dek": "Law firms are piloting ChatGPT‑powered tools to streamline public‑offering work, OpenAI is launching a dedicated legal model, and recent security incidents highlight the need for robust safeguards.",
+    "category": "industry",
+    "tags": [
+      "legal tech",
+      "AI in law",
+      "ChatGPT",
+      "OpenAI Astra",
+      "model safety",
+      "cybersecurity"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-09-21T03:00:53.631Z",
+    "updatedAt": "2026-09-21T03:00:53.631Z",
+    "featuredImage": "/images/articles/how-ai-is-reshaping-ipo-workflows-and-legal-practice-while-raising-new-safety-co.jpg",
+    "featuredImageAlt": "Lawyers reviewing documents on laptops in a modern office setting",
+    "imageCredit": "Benjamin Haydon — Public domain",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Anti-Slavery_Society_Convention%2C_1840_by_Benjamin_Robert_Haydon.jpg",
+    "sources": [
+      {
+        "name": "OpenAI – How Cooley is accelerating IPO work with ChatGPT",
+        "url": "https://openai.com/index/cooley-gopublic"
+      },
+      {
+        "name": "OpenAI – Introducing Astra for Law",
+        "url": "https://openai.com/index/astra-for-law"
+      },
+      {
+        "name": "Ars Technica – Nonprofit that tracks meteors taken down by \"critical blow\" from a cyberattack",
+        "url": "https://arstechnica.com/security/2026/09/nonprofit-that-tracks-meteors-taken-down-by-critical-blow-from-a-cyberattack/"
+      },
+      {
+        "name": "OpenAI – Our framework for reporting model misalignment",
+        "url": "https://openai.com/index/model-misalignment-reporting-framework"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/cooley-gopublic",
+    "generatedBy": "groq",
+    "body": [
+      "The legal industry is moving faster than many expected toward artificial‑intelligence assistance. Two recent announcements illustrate how firms are experimenting with large language models to cut friction in high‑stakes work: Cooley’s GO Public, built on ChatGPT Work, and OpenAI’s Astra for Law, a model designed specifically for legal tasks. Both initiatives promise to surface hidden issues earlier in the workflow, but they also surface questions about data confidentiality, model alignment, and the broader security landscape that surrounds AI‑driven tools.",
+      "Cooley’s GO Public platform leverages ChatGPT Work to embed generative‑AI capabilities directly into the IPO preparation process. The system scans filing drafts, contracts, and regulatory checklists, flagging potential inconsistencies or missing disclosures before lawyers spend hours on manual review. By surfacing these issues early, the platform aims to let attorneys focus their judgment on the most complex, high‑impact decisions rather than routine compliance checks.",
+      "The impact of that shift could be significant for both law firms and their corporate clients. IPO work traditionally involves massive document collections, tight deadlines, and a high tolerance for error. Early detection of gaps can reduce the risk of costly regulatory setbacks, accelerate the timeline to market, and free up senior counsel for strategic advising. In practice, firms that adopt such tools may see shorter billable hours for routine tasks while delivering higher‑quality advice on the nuanced aspects of a public offering.",
+      "OpenAI’s Astra for Law expands the concept beyond a single firm’s workflow. The model is marketed as “frontier intelligence” for law, offering custom firm workflows, integration with proprietary legal data sources, and what OpenAI calls “legal‑grade controls” for confidential client work. These controls include audit logs, access restrictions, and data‑handling policies intended to meet the strict confidentiality standards that law firms must uphold. Astra is positioned as a foundation model that can be fine‑tuned for a variety of practice areas, from contract analysis to litigation research.",
+      "Together, GO Public and Astra illustrate a growing ecosystem of AI tools that blend generic language capabilities with domain‑specific safeguards. While Cooley’s implementation is a bespoke solution for its own IPO practice, Astra offers a more general platform that other firms can adopt and adapt. Both rely on the premise that AI can handle the “first pass” of document review, leaving human lawyers to apply judgment where it matters most. The key differentiator is the level of built‑in security and compliance features, which become critical as firms consider scaling AI across sensitive client matters.",
+      "OpenAI’s recent release of a model‑misalignment reporting framework underscores why transparency matters in this space. The framework outlines how the company will track, investigate, and disclose unexpected or concerning model behavior, and it already includes six reports of such incidents. For legal teams, a clear understanding of a model’s alignment—its tendency to produce accurate, unbiased, and reliable output—is essential. Knowing how OpenAI handles misalignment helps firms assess risk and decide whether a model meets the rigorous standards required for confidential legal work.",
+      "The urgency of robust safeguards is highlighted by a recent cyberattack that knocked a nonprofit tracking meteors offline for weeks. Although the target was not a legal organization, the incident demonstrates how even data‑rich, mission‑driven groups can be crippled by a single breach. For law firms adopting AI, the lesson is clear: the same vulnerabilities that affect a meteor‑tracking nonprofit can affect a firm’s client‑data pipeline if AI tools are not properly secured, monitored, and patched.",
+      "Law firms and legal tech developers should treat these developments as a call to action. Start by piloting AI tools in low‑risk environments, evaluate the built‑in security controls, and adopt transparent reporting practices like OpenAI’s misalignment framework. Conduct regular security audits, enforce strict data‑access policies, and stay informed about emerging threats that could compromise AI‑driven workflows. By balancing the efficiency gains of models like GO Public and Astra with disciplined risk management, the legal industry can reap the benefits of AI without sacrificing client confidentiality or regulatory compliance."
+    ]
   }
 ]
