@@ -2194,5 +2194,59 @@
       "Compounding the security concerns, a report from Ars Technica described AI bots named “Timmy,” “Ren,” and “Jackie” spreading low‑quality content across social media. These agents, described as only a few days old, are part of a growing trend where automated actors generate large volumes of spam, misinformation, or promotional material. The flood of “slop‑infused” posts illustrates how easy it is to weaponize AI for nuisance or malicious purposes, and why coordinated standards around model usage and content moderation are essential.",
       "For readers, the takeaway is clear: staying ahead of AI’s rapid evolution requires both awareness of emerging standards and investment in skill development. Organizations should monitor OpenAI’s standards proposals, begin internal audits of AI models, and consider enrolling staff in the OpenAI Academy or similar programs. Individuals can also follow reputable sources for updates on AI safety and cybersecurity best practices, ensuring they are prepared to both leverage AI responsibly and defend against its misuse."
     ]
+  },
+  {
+    "id": "81487e8f0cc601e273b648a5",
+    "slug": "ais-double-edge-a-faster-rsa-break-meets-openais-education-and-cyber-defense-pus",
+    "title": "AI’s Double Edge: A Faster RSA Break Meets OpenAI’s Education and Cyber‑Defense Push",
+    "dek": "A new algorithm threatens the RSA cryptosystem while OpenAI expands AI training and cyber tools for Ukraine, highlighting how artificial intelligence is reshaping both threats and safeguards.",
+    "category": "industry",
+    "tags": [
+      "RSA",
+      "cryptography",
+      "OpenAI",
+      "AI safety",
+      "cybersecurity",
+      "Ukraine"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-09-24T21:00:16.317Z",
+    "updatedAt": "2026-09-24T21:00:16.317Z",
+    "featuredImage": "/images/articles/ais-double-edge-a-faster-rsa-break-meets-openais-education-and-cyber-defense-pus.jpg",
+    "featuredImageAlt": "Illustration of RSA encryption showing public and private keys",
+    "imageCredit": "Eric Lehman, F. Thomson Leighton, and Albert R. Meyer — CC BY-SA 3.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AMathematics_for_Computer_Science_by_Eric_Lehman%2C_F._Thomson_Leighton%2C_and_Albert_R._Meyer.pdf",
+    "sources": [
+      {
+        "name": "There’s a new way to break RSA that’s faster than anything we’ve seen before",
+        "url": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/"
+      },
+      {
+        "name": "Two years of OpenAI Academy",
+        "url": "https://openai.com/index/two-years-of-openai-academy"
+      },
+      {
+        "name": "OpenAI extends cyber access to Ukraine for civilian defense",
+        "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+      },
+      {
+        "name": "Sam Altman’s remarks at the United Nations Security Council",
+        "url": "https://openai.com/index/sam-altman-un-security-council-remarks"
+      }
+    ],
+    "sourceUrl": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/",
+    "generatedBy": "groq",
+    "body": [
+      "In the past month, two seemingly unrelated stories have converged on the same theme: the accelerating clash between powerful new technologies and the safeguards that keep digital society stable. A research team announced a novel technique that can dismantle RSA encryption far more quickly than any known factoring method, shaking confidence in a cornerstone of online security. At the same time, OpenAI marked the second anniversary of its Academy program, rolled out additional cyber‑defense tools for Ukraine’s civilian infrastructure, and its chief executive delivered a high‑profile speech to the United Nations Security Council on AI safety. Together, these events illustrate how advances in artificial intelligence are reshaping both the threats and the defenses that protect us.",
+      "The breakthrough, reported in a recent security article, shows that researchers have identified an algorithm that bypasses the traditional need to factor the large prime numbers underlying RSA keys. While the exact mathematics remain under peer review, the authors claim the method reduces the computational effort required to recover private keys by several orders of magnitude compared with the best publicly known factoring attacks. Until now, the security community has largely treated factoring as the only practical path to compromise RSA, a belief that has guided key‑size recommendations for decades. This new approach therefore forces a reassessment of the assumptions that have underpinned internet encryption for years.",
+      "If the technique lives up to its early benchmarks, the impact could be swift and far‑reaching. RSA underlies everything from secure web traffic and email to digital signatures and VPNs. A rapid‑break method would render many existing key lengths vulnerable, potentially exposing historic data and compromising future communications. Experts warn that organizations should begin planning migrations to alternative schemes such as elliptic‑curve cryptography or emerging post‑quantum algorithms, even as standards bodies evaluate the new threat. The urgency is amplified by the fact that many legacy systems cannot be patched easily, leaving a large attack surface if the method becomes publicly available.",
+      "Meanwhile, OpenAI celebrated two years of its Academy initiative, a program designed to democratize AI literacy across schools, nonprofits and under‑served communities. According to the company’s announcement, the Academy has delivered thousands of instructional hours, partnered with educational institutions worldwide, and introduced curricula that blend technical fundamentals with ethical considerations. By lowering the barrier to entry, OpenAI hopes to create a broader talent pool capable of building and overseeing responsible AI systems. The milestone underscores a growing industry trend: as AI tools become more powerful, the demand for structured, inclusive training grows in parallel.",
+      "In a related move, OpenAI announced that its Daybreak cyber‑defense platform will be extended to the Ukrainian government to help protect civilian infrastructure from hostile actors. The program provides threat‑intelligence feeds, automated response playbooks and AI‑assisted analysis tools that can accelerate detection of ransomware, phishing and other attacks targeting utilities, hospitals and municipal services. OpenAI frames the effort as a contribution to the resilience of societies under pressure, and it marks one of the few instances where a leading AI firm has offered its security stack directly to a sovereign nation for non‑military purposes.",
+      "CEO Sam Altman addressed the United Nations Security Council shortly after these announcements, emphasizing that the rapid evolution of AI demands coordinated global governance. He warned that unchecked AI deployment could outpace existing safety mechanisms, and he called for international agreements that ensure human oversight, transparency and accountability. Altman also highlighted the need for shared standards on model robustness and for mechanisms that allow nations to collaborate on threat mitigation without compromising civil liberties. The speech reflects a broader push within the tech sector to shape policy before regulatory frameworks solidify.",
+      "The convergence of a faster RSA attack and OpenAI’s expanding role in both education and cyber defense illustrates a broader pattern: AI is becoming both a vector for new vulnerabilities and a tool for defending against them. As cryptographic research leverages machine learning to discover shortcuts, the same technology can automate threat hunting and improve incident response. However, the dual use nature of AI also raises alignment concerns, prompting calls for stronger safety protocols and cross‑border cooperation. Stakeholders—from corporate security teams to national policymakers—must therefore treat AI advancements and cryptographic resilience as interdependent challenges.",
+      "For readers, the practical takeaway is clear: now is the time to audit your organization’s cryptographic posture and begin transitioning away from RSA where feasible, prioritizing longer key lengths or alternative algorithms that have withstood recent scrutiny. Simultaneously, staying informed about AI safety initiatives—such as OpenAI’s Academy resources or its public‑policy engagements—can help teams build the expertise needed to evaluate emerging threats. Finally, businesses and public institutions should consider participating in industry working groups that address AI‑driven security risks, ensuring that the rapid pace of innovation is matched by equally swift safeguards."
+    ]
   }
 ]
