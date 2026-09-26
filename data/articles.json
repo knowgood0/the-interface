@@ -2625,5 +2625,58 @@
       "Having a dedicated benchmark helps align model development with ethical standards and regulatory expectations. By measuring performance against MentalHealthBench, developers can identify gaps before deploying chatbots to vulnerable users. The initiative also gives researchers a common yardstick, encouraging transparency and continuous improvement across the industry.",
       "At the same time, the same AI advances are being weaponized. Microsoft recently disrupted an AI‑assisted platform called EvilTokens that had compromised 12,000 user accounts by automating the steps needed for mass credential theft. The platform leveraged generative AI to streamline phishing, password spraying, and other tactics, making attacks faster and easier to execute. The takedown underscores the importance of robust security hygiene—regular password updates, multi‑factor authentication, and monitoring for anomalous login activity—especially as AI tools lower the barrier for sophisticated cyber‑crime."
     ]
+  },
+  {
+    "id": "f7aa6b5e5b769a8e6a8b105c",
+    "slug": "ai-agents-promise-cost-cuts-for-call-centers-yet-security-and-safety-gaps-remind",
+    "title": "AI Agents Promise Cost Cuts for Call Centers, Yet Security and Safety Gaps Remind Firms to Proceed Cautiously",
+    "dek": "Ringg’s multilingual AI agents claim to resolve most calls at a fraction of the cost, but recent security breaches and data‑loss incidents highlight the need for safety benchmarks, robust cyber defenses, and solid data‑management practices.",
+    "category": "industry",
+    "tags": [
+      "AI agents",
+      "customer service",
+      "AI safety",
+      "cybersecurity",
+      "healthcare data"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-09-26T21:00:31.099Z",
+    "updatedAt": "2026-09-26T21:00:31.099Z",
+    "featuredImage": "/images/articles/ai-agents-promise-cost-cuts-for-call-centers-yet-security-and-safety-gaps-remind.jpg",
+    "featuredImageAlt": "Illustration of a virtual AI assistant handling a phone call in a modern call center",
+    "imageCredit": "Dietmar Rabich — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AD%C3%BClmen%2C_St.-Viktor-Kirche%2C_Innenansicht%2C_Krippe_--_2018_--_0614.jpg",
+    "sources": [
+      {
+        "name": "Ringg AI agents announcement",
+        "url": "https://openai.com/index/ringg"
+      },
+      {
+        "name": "MentalHealthBench introduction",
+        "url": "https://openai.com/index/introducing-mentalhealthbench"
+      },
+      {
+        "name": "Microsoft disrupts EvilTokens platform",
+        "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/"
+      },
+      {
+        "name": "IT mistake erases hospital maternity records",
+        "url": "https://arstechnica.com/information-technology/2026/09/it-mistake-erases-11-years-of-viewing-history-for-hospitals-maternity-records/"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/ringg",
+    "generatedBy": "groq",
+    "body": [
+      "In the past month the AI landscape has delivered both headline‑grabbing advances and stark reminders of lingering risks. On the commercial side, Ringg announced that its new AI‑driven agents, built on OpenAI’s GPT‑5.6, can resolve as many as 65 percent of inbound customer calls while cutting operating costs dramatically. At the same time, OpenAI released MentalHealthBench, a benchmark designed to measure how helpful and safe AI responses are in realistic mental‑health conversations. Across the security front, Microsoft recently dismantled an AI‑assisted platform that had been used to compromise roughly 12,000 user accounts, and a separate IT error erased more than a decade of viewing history for maternity records in English hospitals. Together these stories illustrate how quickly AI can reshape business processes, but also how fragile the surrounding safety and data‑management practices remain.",
+      "Ringg’s claim rests on the capabilities of GPT‑5.6, the latest iteration of OpenAI’s language model family. According to the company, the agents operate in multiple languages and can be accessed through voice, chat, WhatsApp and web interfaces. The promotional material states that the system resolves up to 65 percent of calls without human intervention and does so at roughly 90 percent lower cost compared with deployments that rely on the older GPT‑4.1 model. If the figures hold up in real‑world deployments, the technology could dramatically shrink the staffing budgets of call centers while expanding service hours and language coverage.",
+      "The potential upside for businesses is clear: fewer agents needed on the floor, faster response times, and the ability to serve customers in regions where multilingual staff are scarce. However, the same efficiency gains raise operational questions. Complex or emotionally charged issues often require human empathy, and the handoff process between AI and a live representative must be seamless to avoid customer frustration. Companies adopting Ringg‑style agents will need to monitor key performance indicators such as escalation rates, first‑call resolution, and customer satisfaction scores to ensure that cost savings do not come at the expense of service quality.",
+      "Safety concerns become especially salient as AI agents move into sensitive domains. OpenAI’s MentalHealthBench is an expert‑informed benchmark that evaluates AI responses for both helpfulness and safety in realistic mental‑health dialogues. By providing a standardized test set, the benchmark aims to surface harmful or misleading outputs before they reach end users. While the benchmark itself does not guarantee that any particular model is safe, it gives developers a concrete tool to measure progress and identify failure modes. As more firms embed conversational AI into support channels, using such safety checks could become a de‑facto prerequisite for responsible deployment.",
+      "The need for robust safeguards is underscored by recent security incidents. Microsoft disclosed that it had disrupted an end‑to‑end platform called EvilTokens, which leveraged AI to automate the credential‑stealing process and had already compromised about 12,000 accounts. The platform lowered the technical barrier for attackers, allowing them to scale breaches faster than traditional methods. This episode demonstrates that the same generative capabilities that power helpful agents can also be weaponized to accelerate cyber‑attacks. Organizations must therefore treat AI as a double‑edged sword, incorporating threat modeling and continuous monitoring into any AI rollout.",
+      "Data integrity remains another vulnerable point. An unrelated IT mistake at several English hospitals resulted in the loss of eleven years of viewing history for maternity records, leaving only the core patient‑care data intact. While the immediate clinical impact was limited, the incident highlighted how a single configuration error can erase decades of audit trails, research data, and administrative records. For institutions that are already grappling with the regulatory demands of health‑care data, the episode serves as a cautionary tale about the importance of rigorous backup procedures, change‑control policies, and regular data‑recovery drills.",
+      "Taken together, these developments paint a picture of rapid AI adoption tempered by emerging gaps in safety, security, and data governance. Companies eager to capitalize on the cost efficiencies of AI agents should first benchmark their models against tools like MentalHealthBench, ensuring that the systems do not produce harmful advice. Simultaneously, security teams must extend their threat‑modeling frameworks to include AI‑enabled attack vectors, as illustrated by the EvilTokens disruption. Finally, robust data‑management practices—regular backups, immutable logs, and strict access controls—are essential to prevent accidental loss of critical information, whether in a call center or a hospital.",
+      "For readers considering AI agents for their own operations, a pragmatic checklist can help balance opportunity with risk. Start by piloting the technology on low‑stakes interactions and measure real‑world resolution rates against the vendor’s claims. Run the model through safety benchmarks such as MentalHealthBench before exposing it to customers, especially in health‑related or financial contexts. Conduct a security audit that includes AI‑specific threat scenarios and verify that incident‑response plans cover AI‑driven compromises. Finally, implement a comprehensive data‑backup strategy that includes versioned snapshots and regular restoration tests. By taking these steps, organizations can reap the efficiency gains of AI while protecting users and data."
+    ]
   }
 ]
