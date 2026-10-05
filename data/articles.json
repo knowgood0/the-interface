@@ -3764,5 +3764,47 @@
       "Businesses looking to replicate The Den’s gains can follow a simple roadmap. First, identify a repetitive, text‑heavy task such as grant writing, report drafting or policy documentation. Second, run a short pilot with ChatGPT Work, feeding it a small set of real examples and measuring the time saved. Third, train staff on prompt‑crafting best practices and set up a review workflow to catch errors. Finally, monitor outcomes—both time saved and any compliance issues—and adjust the scope of AI assistance accordingly. This incremental approach reduces the learning curve while delivering early wins.",
       "The Den’s story underscores a broader shift: AI tools are becoming practical utilities for community‑level organisations, not just for tech giants. By freeing up to fifteen hours a week, the club can focus on growth, member engagement and the day‑to‑day experience that defines its brand. As more small businesses experiment with AI‑driven productivity suites, the key will be balancing speed with diligence, ensuring that the convenience of automated drafts does not compromise quality or regulatory compliance. When used responsibly, platforms like ChatGPT Work can be a catalyst for both efficiency and sustainable expansion."
     ]
+  },
+  {
+    "id": "72e81c54bbcc56f789c090dd",
+    "slug": "openais-new-visual-ads-in-chatgpt-what-marketers-need-to-know",
+    "title": "OpenAI’s New Visual Ads in ChatGPT: What Marketers Need to Know",
+    "dek": "OpenAI adds a visual ad slot to ChatGPT, expands measurement tools, attribution partners and brand‑safety controls, opening a fresh channel for advertisers.",
+    "category": "industry",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "advertising",
+      "visual ads",
+      "ad measurement",
+      "brand safety"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-05T15:00:36.880Z",
+    "updatedAt": "2026-10-05T15:00:36.880Z",
+    "featuredImage": "/images/articles/openais-new-visual-ads-in-chatgpt-what-marketers-need-to-know.jpg",
+    "featuredImageAlt": "ChatGPT conversation window showing a visual advertisement displayed alongside the chat messages",
+    "imageCredit": "MRaish (WMF) — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AReading_Wikipedia_-Full_Report-May_2023.pdf",
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+    "generatedBy": "groq",
+    "body": [
+      "OpenAI’s recent announcement marks a notable shift in how advertisers can reach users inside conversational AI. As chat‑based assistants become daily tools for work and leisure, the platforms that host them are looking for ways to monetize without disrupting the user experience. On October 5 2026, OpenAI unveiled a visual ad format that appears directly inside the ChatGPT interface, joining the growing list of non‑search ad placements such as social feeds and video streams. The move reflects a broader industry trend of embedding brand messages where people already spend time, and it raises new questions about measurement, safety and relevance.",
+      "The visual ad format is designed to sit alongside the chat window, using static or animated graphics that blend with the conversation layout. Unlike traditional banner ads that occupy separate page real estate, these ads appear in the same scrollable pane where users type queries and read responses. OpenAI says the format respects the conversational flow by keeping the ad size modest and allowing users to dismiss or ignore it. Because the placement is inside a text‑heavy environment, advertisers can pair visual elements with contextual prompts, potentially increasing recall while staying unobtrusive.",
+      "Along with the new placement, OpenAI expanded its measurement toolkit. Advertisers now have access to richer performance dashboards that track impressions, viewability, and interaction rates specific to the ChatGPT environment. The dashboards also break down metrics by device type, session length, and user intent signals that OpenAI derives from the surrounding conversation. This granular data aims to give marketers a clearer picture of how their creative performs in a conversational context, where traditional click‑through rates may be less relevant. By providing standardized reporting, OpenAI hopes to make the channel comparable to established digital media buys.",
+      "A key part of the rollout is the introduction of attribution partnerships. OpenAI is working with third‑party measurement firms to link ad exposure inside ChatGPT to downstream actions such as website visits, sign‑ups, or purchases. These partnerships rely on privacy‑preserving identifiers that respect user consent while still enabling marketers to close the loop on campaign effectiveness. The ability to attribute conversions to a specific chat‑based impression could make the format more attractive to performance‑driven advertisers, who have historically relied on pixel‑based tracking in web and app environments.",
+      "Brand suitability controls are also being rolled out to address concerns about ad placement next to sensitive or inappropriate content. Advertisers can set parameters that restrict their ads from appearing in conversations flagged for topics such as health misinformation, political debate, or explicit language. OpenAI’s moderation system evaluates the surrounding dialogue in real time and applies these rules before an ad is rendered. This approach gives brands a higher degree of confidence that their messages will not be associated with content that could damage reputation, a common hurdle for new ad formats.",
+      "For marketers, the new format opens a channel that reaches users at a moment of high attention. ChatGPT is often used for research, problem‑solving, and creative brainstorming, meaning users are actively engaged with the interface. Placing a visual ad in that flow can capture attention without the clutter of a full‑screen takeover. Moreover, the conversational context provides an opportunity for brands to tailor messaging based on the user’s query, creating a more personalized experience. As advertisers experiment, the format could become a staple for brand awareness campaigns that need to blend seamlessly into everyday digital workflows.",
+      "Advertisers looking to test the ChatGPT visual ad should start by defining clear objectives—whether it’s brand lift, traffic, or lead generation—and selecting measurement partners that support OpenAI’s attribution framework. Creative assets must adhere to the size and animation limits disclosed by OpenAI, and brand‑suitability settings should be configured early to avoid placement issues. Running pilot campaigns across different industries can reveal how audience intent influences performance, while A/B testing of visual versus text‑only prompts can inform creative strategy. Ongoing monitoring of the dashboards will help marketers optimize spend and demonstrate ROI to stakeholders.",
+      "The introduction of ads inside a leading conversational AI signals a broader shift toward monetizing emerging user interfaces. If the format proves effective, we may see similar placements in other chat‑based products, expanding the ad ecosystem beyond browsers and apps. However, the success of this channel will depend on maintaining a balance between revenue generation and preserving the user‑first experience that made ChatGPT popular. Transparency, robust measurement, and strong brand‑safety mechanisms will be essential to building advertiser confidence. As the industry watches OpenAI’s rollout, the next few months will likely shape the standards for advertising in AI‑driven conversations."
+    ]
   }
 ]
