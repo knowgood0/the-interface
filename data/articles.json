@@ -4551,5 +4551,51 @@
       "The rise of AI‑enabled false‑front operations poses a systemic risk to democratic societies. When fabricated pieces appear to come from trusted outlets, they can sway opinions, amplify polarization, and erode trust in legitimate media. Detecting such campaigns requires a combination of technical tools—such as watermarking, provenance tracking, and anomaly detection—and human expertise in media forensics. OpenAI’s intervention demonstrates that model providers can play a proactive role by monitoring misuse of their APIs, enforcing usage policies, and sharing threat intelligence with law‑enforcement and platform operators. However, the responsibility also falls on organisations, journalists, and the public to verify sources and remain skeptical of unusually polished content that lacks clear attribution.",
       "For readers in security, technology, or media roles, the two stories offer clear takeaways. First, adopting AI‑driven analysis tools like Daybreak can dramatically improve incident response speed, but they should be deployed with built‑in human review to mitigate false conclusions. Second, organisations must treat AI‑generated misinformation as a real threat, investing in detection capabilities, staff training, and cross‑industry collaboration to surface deceptive campaigns early. Finally, supporting transparent AI governance—such as clear usage policies, model watermarking, and responsible disclosure practices—helps keep the technology on the side of defence rather than offense. By balancing automation with oversight, businesses can harness AI’s power while guarding against its misuse."
     ]
+  },
+  {
+    "id": "6b334c9bb83f300bfe868047",
+    "slug": "how-asana-cut-ai-model-costs-by-76-and-openais-crackdown-on-ai-powered-influence",
+    "title": "How Asana Cut AI Model Costs by 76× and OpenAI’s Crackdown on AI‑Powered Influence Ops Reveal a New Landscape",
+    "dek": "OpenAI reports that Asana’s new browser agent runs 76 times cheaper and five times faster with GPT‑6.1 Sol, while the same company disrupted two AI‑driven false‑front campaigns, underscoring both the economic promise and security challenges of today’s models.",
+    "category": "industry",
+    "tags": [
+      "GPT-6",
+      "Asana",
+      "AI cost reduction",
+      "AI influence operations",
+      "OpenAI",
+      "AI security"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-09T21:01:06.855Z",
+    "updatedAt": "2026-10-09T21:01:06.855Z",
+    "featuredImage": "/images/articles/how-asana-cut-ai-model-costs-by-76-and-openais-crackdown-on-ai-powered-influence.jpg",
+    "featuredImageAlt": "Screenshot of an Asana project board showing tasks and collaboration features",
+    "imageCredit": "EAsikingarmager (WMF) — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3ATranslatable_Pages_Survey_Results.pdf",
+    "sources": [
+      {
+        "name": "OpenAI Blog – Asana browser agent",
+        "url": "https://openai.com/index/asana-browser-agent"
+      },
+      {
+        "name": "OpenAI Blog – Disrupting AI-enabled false front operations",
+        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/asana-browser-agent",
+    "generatedBy": "groq",
+    "body": [
+      "In the past week OpenAI highlighted two very different developments that together illustrate the dual nature of modern generative AI. On the one hand, the company announced that Asana, the work‑management platform, has used the latest GPT‑6 Astra model inside its Codex environment to build a browser‑based agent that is dramatically cheaper and faster. On the other hand, OpenAI disclosed that it had intervened in two covert influence operations that leveraged AI‑generated content and false‑front journalists to spread geopolitical messaging. Both stories point to the growing impact of large language models on business efficiency and on the information ecosystem.",
+      "According to OpenAI’s blog post, Asana integrated GPT‑6 Astra into a new browser agent that runs directly in a user’s web session. In internal tests the agent achieved a 76‑fold reduction in model‑related costs while delivering responses five times faster than the previous generation. The agent is built on OpenAI’s Codex platform, which lets developers embed powerful language‑model capabilities into custom tools without managing the underlying infrastructure. By moving the heavy lifting to a more efficient model, Asana can offer richer assistance features without inflating its operating budget.",
+      "Cost and latency are critical levers for SaaS providers. Running large language models in the cloud can quickly become a major expense, especially when usage scales to millions of daily active users. A 76‑times cost reduction means that Asana can allocate resources to other product areas, potentially lower subscription fees, or invest in additional AI‑driven features such as automated task suggestions and real‑time project insights. Faster response times also improve the user experience, reducing the friction that sometimes makes AI assistants feel sluggish or unhelpful.",
+      "The Asana case reflects a broader industry shift toward newer, more efficient model families like GPT‑6.1 Sol. These models are designed to deliver higher token throughput and lower inference costs, making them attractive for in‑browser deployments where compute budgets are tight. Companies that experiment with these models early can gain a competitive edge by delivering AI‑enhanced functionality that feels native to the product, rather than an add‑on that users must tolerate. The trend also encourages a move away from heavyweight server‑side inference toward lighter, edge‑friendly solutions.",
+      "While the economic benefits are clear, OpenAI also used the same week to announce a security win: the disruption of two AI‑enabled influence operations that masqueraded as legitimate journalism outlets and a think‑tank. The operations used synthetic text and deep‑faked personas to amplify geopolitical narratives, exploiting the credibility of seemingly independent sources. OpenAI’s intervention prevented further distribution of the fabricated content and highlighted how generative AI can be weaponized to create convincing false‑front campaigns.",
+      "False‑front operations are not new, but AI dramatically lowers the barrier to entry. With large language models, an actor can generate large volumes of persuasive copy, craft realistic social‑media posts, and even simulate expert commentary with minimal effort. When combined with automated distribution tools, these campaigns can reach wide audiences before fact‑checkers or platform moderators can react. The OpenAI disruption shows that the same organizations that build the models are now taking an active role in detecting and halting misuse, a practice that may become standard as the technology matures.",
+      "For businesses and everyday users, the two stories carry practical takeaways. Companies should evaluate newer model families not only for performance but also for cost, especially when scaling AI features across millions of users. At the same time, they need to adopt verification workflows—such as source attribution, watermark checks, and human review—to guard against AI‑generated misinformation. Readers can protect themselves by questioning the provenance of sensational articles, especially when they appear on unfamiliar outlets, and by supporting platforms that invest in AI safety and transparency initiatives.",
+      "Together, Asana’s cost breakthrough and OpenAI’s counter‑operation effort illustrate the twin forces shaping the AI landscape: rapid improvements in efficiency that unlock new product possibilities, and an escalating need for security measures to keep the technology from being misused. As the ecosystem evolves, staying informed about model capabilities, cost structures, and emerging threats will be essential for anyone looking to harness AI responsibly and profitably."
+    ]
   }
 ]
