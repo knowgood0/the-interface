@@ -5289,5 +5289,53 @@
       "For readers who manage technology projects, the takeaway is clear: adopt a layered approach to AI deployment. Start with a clear policy that defines acceptable use cases, then implement technical controls such as request logging, content filtering and rate limiting. Pair these measures with regular security audits that specifically test for AI‑generated exploits. Training staff to recognize AI‑assisted phishing or code‑generation attacks can further reduce risk. Finally, stay informed about emerging standards and regulatory guidance, as governments worldwide are beginning to codify requirements for responsible AI use.",
       "The twin narratives of a model that can break into wallets and a bank that is safely serving millions illustrate the double‑edged nature of today’s generative AI. The technology is powerful enough to rewrite code, automate research and personalize services at scale, but that same power can be misused with minimal effort. By investing in governance platforms, continuous monitoring and a security‑first mindset, organizations can capture the productivity gains while keeping the threat surface in check. The future of AI in business will be defined not just by model size, but by how responsibly those models are deployed."
     ]
+  },
+  {
+    "id": "b934e2a705d039c311a13cb0",
+    "slug": "how-brazils-largest-bank-and-a-credit-fund-are-using-openai-tools-to-transform-f",
+    "title": "How Brazil’s Largest Bank and a Credit Fund Are Using OpenAI Tools to Transform Finance",
+    "dek": "Itaú’s AI‑first rollout and Benefit Street Partners’ use of Codex illustrate how generative AI is reshaping customer service, compliance and internal workflows in highly regulated financial firms.",
+    "category": "industry",
+    "tags": [
+      "generative AI",
+      "banking",
+      "finance",
+      "AI governance",
+      "code review",
+      "loan analysis",
+      "OpenAI",
+      "regulation"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-17T09:00:26.304Z",
+    "updatedAt": "2026-10-17T09:00:26.304Z",
+    "featuredImage": "/images/articles/how-brazils-largest-bank-and-a-credit-fund-are-using-openai-tools-to-transform-f.jpg",
+    "featuredImageAlt": "A computer screen showing a chatbot conversation about financial services",
+    "imageCredit": "People's Bank of China — Public domain",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AProgress_R%26D_E-CNY.pdf",
+    "sources": [
+      {
+        "name": "OpenAI Blog – Itaú Generative AI",
+        "url": "https://openai.com/index/itau-generative-ai"
+      },
+      {
+        "name": "OpenAI Blog – Benefit Street Partners Codex",
+        "url": "https://openai.com/index/benefit-street-partners"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/itau-generative-ai",
+    "generatedBy": "groq",
+    "body": [
+      "Financial institutions are accelerating AI adoption to cut costs, improve service speed and stay competitive. In Brazil, Itaú Unibanco – the country’s biggest bank – has launched a public‑facing conversational platform called ia.i, while also deploying an internal governance system named IARA. Across the Atlantic, Benefit Street Partners, a credit‑focused investment firm, is using OpenAI’s Codex to automate code review and speed up loan‑valuation tools. Both cases show how generative AI can be layered onto existing finance processes, but each also highlights the need for careful risk management in a sector where regulators watch every data flow.",
+      "Itaú’s AI‑first strategy centers on the ia.i interface, a chat‑based portal that lets customers ask questions about accounts, credit cards and investment products in natural language. The bank markets the tool as a way to bring sophisticated advice to millions of users without the friction of phone queues or branch visits. At the same time, the IARA platform provides employees with a governed environment for building, testing and deploying AI models, ensuring that any new capability respects the bank’s internal policies and Brazil’s strict financial regulations.",
+      "Regulatory compliance is a core driver of IARA’s design. Brazilian banking law requires rigorous data protection, auditability and explainability for any automated decision‑making. IARA therefore embeds version control, model‑performance monitoring and a review workflow that forces human sign‑off before a model reaches customers. By separating the public conversational layer from the internal development sandbox, Itaú can experiment quickly while keeping a clear audit trail that regulators can inspect if needed.",
+      "Early reports from Itaú suggest the conversational AI has reduced average response times for routine inquiries from minutes to seconds, freeing call‑center agents to focus on higher‑value interactions. The system also enables personalized product recommendations based on a user’s transaction history, something that previously required manual analysis by relationship managers. While the bank has not disclosed exact adoption metrics, the rollout demonstrates how a large, heavily regulated institution can leverage generative AI to broaden access to financial advice without sacrificing oversight.",
+      "Benefit Street Partners illustrates a different, more developer‑centric use of OpenAI technology. The firm’s analyst Anant Kumar built internal tools that compare loan valuations and parse credit agreements, relying on Codex to generate, review and refactor code snippets. By automating repetitive coding tasks, Codex helps the team produce reliable scripts faster, reducing the time between data ingestion and actionable insight. The firm describes the approach as a way to keep analysts focused on interpretation rather than boilerplate programming.",
+      "Codex’s role in the workflow is essentially a smart assistant for developers. When an analyst writes a function to extract covenant clauses from a PDF, Codex can suggest syntactically correct code, flag potential bugs and even propose unit tests. This reduces the likelihood of errors that could propagate into financial models, a critical concern when evaluating credit risk. Faster code turnaround also means the firm can respond to market opportunities more quickly, an advantage in the competitive loan‑trading space.",
+      "Both Itaú and Benefit Street Partners are using OpenAI models to accelerate finance‑related tasks, but they target different audiences. Itaú’s ia.i is outward‑facing, designed to improve customer experience while its IARA platform safeguards internal development. Benefit Street’s Codex deployment is inward‑facing, streamlining the work of analysts and developers who build valuation tools. The common thread is a layered approach: start with a narrow, well‑governed pilot, then expand functionality as confidence in the model’s reliability grows, all while maintaining a clear compliance posture.",
+      "For finance professionals considering similar AI projects, the key lessons are to prioritize governance, start with a specific problem, and choose the right tool for the job. A conversational front‑end like ia.i can democratize access to advice, but it must be backed by a robust audit framework such as IARA. For internal automation, code‑generation assistants like Codex can cut development cycles, yet teams should enforce code‑review policies to catch subtle errors. Ultimately, blending customer‑centric AI with disciplined internal controls offers the most sustainable path to productivity gains in regulated finance."
+    ]
   }
 ]
