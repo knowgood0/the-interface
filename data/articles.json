@@ -5337,5 +5337,46 @@
       "Both Itaú and Benefit Street Partners are using OpenAI models to accelerate finance‑related tasks, but they target different audiences. Itaú’s ia.i is outward‑facing, designed to improve customer experience while its IARA platform safeguards internal development. Benefit Street’s Codex deployment is inward‑facing, streamlining the work of analysts and developers who build valuation tools. The common thread is a layered approach: start with a narrow, well‑governed pilot, then expand functionality as confidence in the model’s reliability grows, all while maintaining a clear compliance posture.",
       "For finance professionals considering similar AI projects, the key lessons are to prioritize governance, start with a specific problem, and choose the right tool for the job. A conversational front‑end like ia.i can democratize access to advice, but it must be backed by a robust audit framework such as IARA. For internal automation, code‑generation assistants like Codex can cut development cycles, yet teams should enforce code‑review policies to catch subtle errors. Ultimately, blending customer‑centric AI with disciplined internal controls offers the most sustainable path to productivity gains in regulated finance."
     ]
+  },
+  {
+    "id": "0db732d635094326005914e5",
+    "slug": "how-benefit-street-partners-accelerated-credit-analysis-with-openais-codex",
+    "title": "How Benefit Street Partners Accelerated Credit Analysis with OpenAI’s Codex",
+    "dek": "Benefit Street Partners’ finance team uses OpenAI’s Codex to speed up code reviews and loan‑valuation tools, cutting response times for client queries and showing how AI can streamline complex credit work.",
+    "category": "industry",
+    "tags": [
+      "finance",
+      "AI coding",
+      "OpenAI Codex",
+      "credit analysis",
+      "automation"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "article",
+    "publishedAt": "2026-10-17T15:00:27.444Z",
+    "updatedAt": "2026-10-17T15:00:27.444Z",
+    "featuredImage": "/images/articles/how-benefit-street-partners-accelerated-credit-analysis-with-openais-codex.jpg",
+    "featuredImageAlt": "Screenshot of a developer using OpenAI Codex to review Python code on a laptop screen",
+    "imageCredit": "Klára Joklová (WMCZ) — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAppendix_I._Additional_prezentation_to_the_Youth_Conference_25_report.pdf",
+    "sources": [
+      {
+        "name": "OpenAI Blog – Benefit Street Partners answers questions faster with Codex",
+        "url": "https://openai.com/index/benefit-street-partners"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/benefit-street-partners",
+    "generatedBy": "groq",
+    "body": [
+      "Benefit Street Partners, a firm that focuses on distressed‑debt investing, recently shared how it reduced the time it takes to answer internal and client questions by integrating OpenAI’s Codex into its development workflow. The effort is led by Anant Kumar, who builds software that compares loan valuations and parses credit agreements. By feeding the model snippets of Python and SQL code, the team gets instant feedback on syntax errors, logic bugs, and best‑practice recommendations, allowing developers to iterate faster than before.",
+      "Codex is a large language model trained on billions of lines of public code. It can generate, explain, and refactor code in many programming languages, making it a useful assistant for developers who need to write or review scripts quickly. In the finance world, where analysts often rely on custom models to assess risk, the ability to validate code on the fly can shave hours off a typical review cycle. This is especially true for tasks like loan‑valuation comparisons, which involve complex calculations and data‑cleaning steps.",
+      "At Benefit Street Partners, the primary use case for Codex is code review. Instead of waiting for a senior engineer to manually scan a teammate’s script, the model highlights potential issues as soon as the code is saved. This early detection reduces the back‑and‑forth that traditionally slows down the process of updating valuation tools. The firm reports that follow‑up questions from portfolio managers and investors are now answered more quickly because the underlying code is more reliable and easier to maintain.",
+      "The speed gains also translate into better client service. When a lender asks for a quick comparison of two loan structures, analysts can pull the latest data, run the valuation model, and deliver results within minutes rather than hours. The reduction in turnaround time improves the firm’s reputation for responsiveness, a competitive edge in a market where timing can affect deal outcomes. While Benefit Street Partners does not disclose exact numbers, the qualitative feedback from its team suggests a noticeable improvement in workflow efficiency.",
+      "Beyond faster code checks, Codex helps the team explore new analytical approaches. By prompting the model with a description of a desired calculation, developers can receive prototype code snippets that they can adapt to their specific data sets. This exploratory capability encourages experimentation without the overhead of writing boilerplate code from scratch, fostering a culture of rapid innovation within the finance team.",
+      "The adoption of Codex also raises important considerations around security and compliance. Financial institutions handle sensitive data, and any AI tool that processes code must be vetted for data leakage risks. Benefit Street Partners ensures that the model runs in a controlled environment, with no direct access to proprietary loan documents. This practice aligns with broader industry guidance that recommends sandboxed AI deployments for regulated sectors.",
+      "For other firms looking to replicate this success, the key steps are clear: start with a well‑defined set of coding tasks, integrate Codex through the official API, and establish a review protocol that combines AI suggestions with human oversight. Training developers to phrase prompts effectively can dramatically improve the relevance of the model’s output. Moreover, maintaining a version‑controlled repository ensures that any AI‑generated changes are tracked and auditable.",
+      "In the longer term, the experience at Benefit Street Partners hints at a broader shift in how finance teams will build and maintain analytical tools. As AI coding assistants become more capable, the bottleneck moves from writing code to defining the right business logic. Organizations that invest early in AI‑augmented development pipelines are likely to see faster decision‑making, lower error rates, and a more agile response to market opportunities."
+    ]
   }
 ]
