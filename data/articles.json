@@ -5378,5 +5378,51 @@
       "For other firms looking to replicate this success, the key steps are clear: start with a well‑defined set of coding tasks, integrate Codex through the official API, and establish a review protocol that combines AI suggestions with human oversight. Training developers to phrase prompts effectively can dramatically improve the relevance of the model’s output. Moreover, maintaining a version‑controlled repository ensures that any AI‑generated changes are tracked and auditable.",
       "In the longer term, the experience at Benefit Street Partners hints at a broader shift in how finance teams will build and maintain analytical tools. As AI coding assistants become more capable, the bottleneck moves from writing code to defining the right business logic. Organizations that invest early in AI‑augmented development pipelines are likely to see faster decision‑making, lower error rates, and a more agile response to market opportunities."
     ]
+  },
+  {
+    "id": "f52acbc7b9791ccda5c91b06",
+    "slug": "plex-vulnerabilities-exploited-and-reactos-gains-ntfs-support-what-it-means-for-",
+    "title": "Plex Vulnerabilities Exploited and ReactOS Gains NTFS Support: What It Means for Users and Open‑Source Security",
+    "dek": "A recent chain of Plex Media Server flaws is being used to deliver malware, while ReactOS reaches a key milestone with NTFS install capability, highlighting the importance of timely updates and open‑source development.",
+    "category": "industry",
+    "tags": [
+      "security",
+      "open source",
+      "Plex",
+      "ReactOS",
+      "NTFS",
+      "software updates"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-19T21:00:27.608Z",
+    "updatedAt": "2026-10-19T21:00:27.608Z",
+    "featuredImage": "/images/articles/plex-vulnerabilities-exploited-and-reactos-gains-ntfs-support-what-it-means-for-.jpg",
+    "featuredImageAlt": "A computer screen displaying code and a lock icon, representing cybersecurity and open‑source software development",
+    "imageCredit": "Pang Ka Kit — CC BY 2.5",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AAndroid_Gingerbread_Easter_egg.jpg",
+    "sources": [
+      {
+        "name": "Ars Technica – Recently fixed Plex Media vulnerabilities are being exploited to install malware",
+        "url": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/"
+      },
+      {
+        "name": "Ars Technica – ReactOS reaches major milestone with NTFS install support",
+        "url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/"
+      }
+    ],
+    "sourceUrl": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+    "generatedBy": "groq",
+    "body": [
+      "A security researcher has reported that attackers are actively exploiting a set of four recently patched vulnerabilities in Plex Media Server to install malware on unpatched systems, underscoring how quickly fixes can become targets when users lag behind on updates.",
+      "The exploit chain begins with a remote code execution flaw in Plex's web interface, followed by a privilege‑escalation bug in the media processing component, a directory‑traversal issue that grants access to arbitrary files, and finally a code‑injection vulnerability that allows the attacker to drop a malicious payload. By chaining these weaknesses, the threat actor can gain full control of a vulnerable Plex box without user interaction beyond the initial network contact.",
+      "For home users and small businesses that rely on Plex to stream personal media libraries, the risk is concrete: compromised devices can become part of a botnet, serve ransomware, or act as a foothold for further network intrusion. The researcher notes that many Plex installations remain on older versions because automatic updates are disabled by default, creating a large attack surface that adversaries can scan for.",
+      "The immediate mitigation steps are straightforward. Plex administrators should verify they are running the latest version released after the vulnerabilities were disclosed, enable automatic updates where possible, and review firewall rules to limit inbound traffic to the Plex service. Additionally, scanning the system with reputable anti‑malware tools and monitoring network traffic for unusual outbound connections can help detect an active compromise.",
+      "In a separate development, the open‑source operating system project ReactOS announced that it now supports installing the OS on NTFS‑formatted drives, thanks to a new driver that handles the NTFS file system during setup. ReactOS aims to be binary‑compatible with Microsoft Windows, and the ability to install directly onto NTFS partitions removes a long‑standing barrier for users who want to test or adopt the platform without reformatting their disks.",
+      "The NTFS install support is built on a driver that implements core NTFS features such as reading and writing files, handling security descriptors, and managing the Master File Table. While the driver is still considered experimental and may not cover every edge case found in Windows, the ReactOS team reports successful installations on a variety of hardware configurations, marking a practical step forward for the project's compatibility goals.",
+      "For users interested in trying ReactOS, the new capability simplifies the onboarding process: they can now install the OS alongside an existing Windows installation on the same NTFS volume, reducing the risk of data loss. However, because ReactOS is still in development, users should treat it as a testing platform rather than a production environment, and keep regular backups of any critical data before proceeding.",
+      "Both stories illustrate a broader lesson for the tech community. Whether dealing with a widely deployed commercial product like Plex or an ambitious open‑source OS like ReactOS, staying current with updates and understanding the security posture of the software you run are essential. Prompt patching, careful configuration, and realistic expectations about software maturity can help users reap the benefits of new features while minimizing exposure to threats."
+    ]
   }
 ]
