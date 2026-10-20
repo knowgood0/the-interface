@@ -5424,5 +5424,52 @@
       "For users interested in trying ReactOS, the new capability simplifies the onboarding process: they can now install the OS alongside an existing Windows installation on the same NTFS volume, reducing the risk of data loss. However, because ReactOS is still in development, users should treat it as a testing platform rather than a production environment, and keep regular backups of any critical data before proceeding.",
       "Both stories illustrate a broader lesson for the tech community. Whether dealing with a widely deployed commercial product like Plex or an ambitious open‑source OS like ReactOS, staying current with updates and understanding the security posture of the software you run are essential. Prompt patching, careful configuration, and realistic expectations about software maturity can help users reap the benefits of new features while minimizing exposure to threats."
     ]
+  },
+  {
+    "id": "682c40897c4e607aa1c4d463",
+    "slug": "reactos-gains-ntfs-install-support-as-openai-expands-coding-aid-for-legacy-langu",
+    "title": "ReactOS Gains NTFS Install Support as OpenAI Expands Coding Aid for Legacy Languages",
+    "dek": "Two parallel advances – a new NTFS driver for the open‑source Windows clone and OpenAI’s push to improve ChatGPT’s handling of low‑resource languages – signal broader compatibility for developers working with legacy systems.",
+    "category": "industry",
+    "tags": [
+      "ReactOS",
+      "NTFS",
+      "OpenAI",
+      "low‑resource programming languages",
+      "software development",
+      "open source",
+      "legacy code"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "article",
+    "publishedAt": "2026-10-20T03:00:50.075Z",
+    "updatedAt": "2026-10-20T03:00:50.075Z",
+    "featuredImage": "/images/articles/reactos-gains-ntfs-install-support-as-openai-expands-coding-aid-for-legacy-langu.jpg",
+    "featuredImageAlt": "ReactOS logo displayed alongside a schematic of the NTFS file system structure",
+    "imageCredit": "Internet Archive identifier : victoriadailytimes19150903 https://archive.org/download/victoriadailytimes19150903/1915_09_03.pdf — Public domain",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AVictoria_Daily_Times_(1915-09-03)_(IA_victoriadailytimes19150903).pdf",
+    "sources": [
+      {
+        "name": "Ars Technica",
+        "url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/"
+      },
+      {
+        "name": "OpenAI",
+        "url": "https://openai.com/index/low-resource-programming-languages"
+      }
+    ],
+    "sourceUrl": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
+    "generatedBy": "groq",
+    "body": [
+      "The software world saw two noteworthy announcements this week that, while coming from very different corners, share a common theme: making it easier for developers to work with older or less‑common platforms. ReactOS, the community‑driven effort to create a binary‑compatible Windows clone, announced that it now supports installing the operating system on NTFS partitions. At the same time, OpenAI released details about new work aimed at boosting ChatGPT’s ability to understand and generate code in low‑resource programming languages such as COBOL and SQLite scripts. Both moves reflect a growing focus on bridging gaps that have long limited productivity for niche or legacy environments.",
+      "ReactOS has been in development for nearly two decades, with the goal of providing a free, open‑source alternative that can run Windows applications without a Microsoft license. Historically, the project has been limited to installing on FAT‑based filesystems, which meant users often had to reformat drives or use work‑arounds to get the OS up and running. The new NTFS install driver removes that barrier, allowing the installer to write directly to the same filesystem that Windows itself uses for most modern PCs.",
+      "The NTFS driver is a kernel‑mode component that translates the file‑system calls made by the ReactOS installer into NTFS‑compatible operations. By supporting the native Windows filesystem, ReactOS can now be deployed on machines that already host Windows installations, on dual‑boot setups, or on virtual disks that default to NTFS. This simplifies testing, reduces the need for separate storage media, and brings the project a step closer to the seamless compatibility it promises.",
+      "Why does NTFS matter beyond convenience? NTFS offers features such as larger file size limits, built‑in security descriptors, and journaling, which are absent from older filesystems like FAT32. For developers and power users who rely on those capabilities, the ability to install ReactOS on NTFS means they can experiment with Windows‑compatible software without sacrificing modern storage features. It also narrows the technical gap between ReactOS and mainstream operating systems, potentially encouraging more contributions from the broader open‑source community.",
+      "On the other side of the spectrum, OpenAI’s recent focus on low‑resource programming languages addresses a different but equally persistent challenge: many critical business systems still run on languages that receive little attention from modern tooling. Languages such as COBOL, still used in banking and government, and SQLite query scripts, common in embedded devices, often lack robust IDE support or up‑to‑date documentation. OpenAI’s effort aims to improve ChatGPT’s ability to understand, generate, and refactor code in these environments.",
+      "OpenAI’s approach includes new evaluation benchmarks that test the model’s performance on software‑engineering tasks, migration of SQLite workloads, and translation of legacy COBOL codebases to more contemporary languages. By training on these specific datasets, the model can offer more accurate suggestions, catch subtle syntax errors, and even propose migration paths. For developers maintaining decades‑old code, this could translate into faster bug fixes, reduced reliance on scarce language experts, and smoother transitions to newer platforms.",
+      "Both the ReactOS milestone and OpenAI’s language work illustrate a broader industry trend: extending the reach of modern development tools into older or less‑served ecosystems. As organizations grapple with technical debt, having reliable, free alternatives for OS compatibility and AI‑assisted coding can lower costs and accelerate modernization. Moreover, the open‑source nature of ReactOS invites community contributions that can further refine NTFS support, while OpenAI’s publicly shared benchmarks encourage other AI researchers to build on their progress.",
+      "For readers who develop or maintain legacy systems, the practical takeaway is clear. If you need a Windows‑compatible environment for testing or experimentation, consider trying the latest ReactOS build with NTFS install support – it’s free and can run alongside existing installations. Likewise, developers working with COBOL, SQLite, or other low‑resource languages should explore the updated ChatGPT capabilities, which may help automate routine code tasks and reduce reliance on hard‑to‑find experts. Keeping an eye on future updates from both projects will be worthwhile as they continue to lower the barriers to working with older technology."
+    ]
   }
 ]
