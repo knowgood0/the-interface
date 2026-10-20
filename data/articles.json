@@ -5471,5 +5471,47 @@
       "Both the ReactOS milestone and OpenAI’s language work illustrate a broader industry trend: extending the reach of modern development tools into older or less‑served ecosystems. As organizations grapple with technical debt, having reliable, free alternatives for OS compatibility and AI‑assisted coding can lower costs and accelerate modernization. Moreover, the open‑source nature of ReactOS invites community contributions that can further refine NTFS support, while OpenAI’s publicly shared benchmarks encourage other AI researchers to build on their progress.",
       "For readers who develop or maintain legacy systems, the practical takeaway is clear. If you need a Windows‑compatible environment for testing or experimentation, consider trying the latest ReactOS build with NTFS install support – it’s free and can run alongside existing installations. Likewise, developers working with COBOL, SQLite, or other low‑resource languages should explore the updated ChatGPT capabilities, which may help automate routine code tasks and reduce reliance on hard‑to‑find experts. Keeping an eye on future updates from both projects will be worthwhile as they continue to lower the barriers to working with older technology."
     ]
+  },
+  {
+    "id": "9a21af6534812cb1e92bae34",
+    "slug": "openai-extends-chatgpt-to-legacy-languages-like-cobol-and-sqlite",
+    "title": "OpenAI Extends ChatGPT to Legacy Languages Like COBOL and SQLite",
+    "dek": "OpenAI’s new evaluations show how its AI model can assist developers working with low‑resource languages, offering a potential shortcut for modernization and embedded‑system projects.",
+    "category": "ai-tools",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "low-resource programming languages",
+      "COBOL",
+      "SQLite",
+      "software engineering"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-20T09:00:38.801Z",
+    "updatedAt": "2026-10-20T09:00:38.801Z",
+    "featuredImage": "/images/articles/openai-extends-chatgpt-to-legacy-languages-like-cobol-and-sqlite.jpg",
+    "featuredImageAlt": "Screenshot of OpenAI ChatGPT interface showing code suggestions for a legacy programming language",
+    "imageCredit": "Trebol6 — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AArtificial_Intelligence_Concept_Hypermap.pdf",
+    "sources": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/index/low-resource-programming-languages"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+    "generatedBy": "groq",
+    "body": [
+      "OpenAI announced on October 19, 2026 that it is extending the reach of its ChatGPT model into programming languages that have traditionally received little attention from AI research. The company’s latest blog post describes a series of new evaluations aimed at measuring how well the model can assist developers who work with low‑resource languages such as SQLite‑style SQL dialects and the decades‑old COBOL language. By publishing the results openly, OpenAI hopes to signal that its tools are not only for the newest, most popular languages but also for the legacy codebases that still power critical infrastructure in finance, government, and industry.",
+      "Low‑resource programming languages are those that lack large, publicly available code repositories, extensive documentation, or active community support. Unlike JavaScript or Python, languages like COBOL or niche SQL variants have relatively few open‑source projects and limited training data for machine‑learning models. This scarcity makes it harder for generic code‑generation tools to produce accurate suggestions, leaving developers to rely on manual effort or specialized, often costly, consulting services. As a result, many organizations postpone modernization projects, increasing technical debt and exposing themselves to security and compliance risks.",
+      "OpenAI’s approach combines two steps: first, it expands the training data that feeds into ChatGPT by curating code samples, migration guides, and test suites from public archives and partner contributions. Second, it runs targeted benchmark suites that simulate real‑world software‑engineering tasks, such as writing a new function, refactoring existing code, or translating a COBOL program into a modern language. The evaluations are designed to surface both strengths and blind spots, allowing the research team to fine‑tune the model before releasing any new capabilities to the public API.",
+      "The SQLite evaluation focuses on the model’s ability to understand and generate SQL statements that conform to SQLite’s specific syntax and constraints. Test cases include creating tables, writing complex joins, and performing data migrations between SQLite and other relational databases. Early results suggest that ChatGPT can suggest correct query structures and even flag potential performance issues, which could be valuable for developers who maintain lightweight embedded databases in mobile apps or IoT devices. However, the model still struggles with edge‑case pragma settings that are unique to SQLite.",
+      "For COBOL, the benchmark centers on migration scenarios where legacy batch jobs must be re‑implemented in a more maintainable language such as Java or Python. The tests ask the model to translate procedural COBOL code, preserve business logic, and generate accompanying unit tests. OpenAI reports that the model can produce syntactically valid translations, but human review remains essential to verify that subtle financial calculations or date‑handling rules are preserved. The effort highlights both the promise of AI‑assisted modernization and the need for domain expertise during the final validation step.",
+      "The practical impact of these advances reaches a wide audience. Enterprises that still run COBOL on mainframes can use ChatGPT as a first‑draft assistant, cutting the time required to produce migration blueprints. Small teams building embedded applications can rely on more accurate SQLite suggestions, reducing debugging cycles. In both cases, the technology helps address a talent gap: fewer engineers are fluent in these older languages, and AI can bridge that knowledge deficit. At the same time, organizations must weigh the risk of over‑reliance on generated code, especially where regulatory compliance is involved.",
+      "Developers interested in trying these new capabilities should start by accessing the ChatGPT API and enabling the “code‑assistant” mode that includes the low‑resource language extensions. It is advisable to run the model’s suggestions through existing test suites and code‑review pipelines before merging any changes. For COBOL migration projects, pairing the AI output with a subject‑matter expert can catch logic errors early. Security best practices also apply: treat generated code as untrusted input, scan for injection vulnerabilities, and keep sensitive data out of prompt histories.",
+      "OpenAI’s public evaluation marks a step toward making AI assistance truly universal across the software stack. By openly sharing benchmark results, the company invites the broader developer community to contribute additional test cases and improve the model’s coverage. As more organizations experiment with AI‑driven code generation for low‑resource languages, feedback loops will likely accelerate further refinements. In the meantime, developers can view the current tools as powerful aides rather than replacements, using them to speed up routine tasks while maintaining rigorous oversight of critical business logic."
+    ]
   }
 ]
