@@ -5975,5 +5975,61 @@
       "To address the broader challenge of critical vulnerabilities, OpenAI supports the Patch the Planet initiative, which connects security researchers, maintainers, and incident responders for coordinated disclosure. The program encourages rapid sharing of vulnerability details and collaborative patch development, aiming to close security gaps before they can be weaponized. In the context of the Tor exit node compromise, a coordinated effort could have accelerated the identification of the malicious nodes and the rollout of mitigations across the network, reducing the window of exposure for users.",
       "For readers who rely on Tor or other privacy‑preserving services, the takeaway is clear: assume that any exit point could be compromised and protect data accordingly. Use end‑to‑end encryption for email (such as PGP or S/MIME) and ensure SSH keys are protected with passphrases and two‑factor authentication. When possible, choose cloud providers that offer robust security tooling and stay informed about coordinated vulnerability disclosures like those facilitated by Patch the Planet. By layering defenses and staying aware of industry‑wide security initiatives, users can reduce the risk of their traffic being intercepted in future attacks."
     ]
+  },
+  {
+    "id": "1d5b149c149015d4e0ee5ff8",
+    "slug": "security-lessons-from-emudhras-tls-failure-and-openais-new-enterprise-ai-tools",
+    "title": "Security Lessons from eMudhra’s TLS Failure and OpenAI’s New Enterprise AI Tools",
+    "dek": "A look at how a certificate‑authority breach underscores the need for strong TLS practices as OpenAI rolls out low‑cost decision APIs, forward‑deployed engineering, and a massive ChatGPT Work rollout at Uber.",
+    "category": "industry",
+    "tags": [
+      "AI",
+      "security",
+      "TLS",
+      "OpenAI",
+      "enterprise",
+      "ChatGPT Work",
+      "Decisions API",
+      "forward deployed engineering"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-22T21:00:34.214Z",
+    "updatedAt": "2026-10-22T21:00:34.214Z",
+    "featuredImage": "/images/articles/security-lessons-from-emudhras-tls-failure-and-openais-new-enterprise-ai-tools.jpg",
+    "featuredImageAlt": "Diagram showing a TLS certificate exchange between a client and a server",
+    "imageCredit": "Internet Archive identifier : dli.granth.23525 https://archive.org/download/dli.granth.23525/23525.pdf — Public domain",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Bombay_Gazette%2C_2_December_1864_(IA_dli.granth.23525).pdf",
+    "sources": [
+      {
+        "name": "Ars Technica – Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+        "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+      },
+      {
+        "name": "OpenAI – Build more responsive apps with the Decisions API",
+        "url": "https://openai.com/index/decisions-api"
+      },
+      {
+        "name": "OpenAI – What FDE means at OpenAI",
+        "url": "https://openai.com/index/forward-deployed-engineering-means"
+      },
+      {
+        "name": "OpenAI – Uber brings ChatGPT Work to all employees with OpenAI",
+        "url": "https://openai.com/index/uber-chatgpt-work-rollout"
+      }
+    ],
+    "sourceUrl": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+    "generatedBy": "groq",
+    "body": [
+      "Over the past week the tech community has been juggling two very different stories: a high‑profile security failure at the Indian certificate authority eMudhra and a series of product announcements from OpenAI that promise faster, more integrated AI capabilities for businesses. The eMudhra episode exposed a flaw in the way the firm handled its private signing key, allowing anyone to create TLS certificates that appear valid for any domain. At the same time, OpenAI rolled out a Decisions API, clarified its Forward Deployed Engineering model, and announced a massive internal rollout of ChatGPT Work at Uber. Together these events underline how quickly AI can become a core part of enterprise workflows, and how fragile the security foundations that support them remain.",
+      "The breach at eMudhra came after the company performed a \"flubbed\" key‑signing ceremony that inadvertently exposed the private key used to issue its own TLS certificates. With that key in hand, an attacker could generate certificates that browsers would trust for any website, effectively bypassing the encryption and authentication guarantees that TLS provides. eMudhra responded by withdrawing from the TLS market entirely, acknowledging that the damage to its credibility was irreparable. The incident serves as a stark reminder that even a single operational mistake in certificate management can undermine the entire trust model of the web, a model that underpins everything from online banking to cloud‑based AI services.",
+      "TLS is the invisible handshake that secures data in transit, and its reliability is a prerequisite for any cloud‑based AI offering. When a user queries an AI model, the request and the response travel over encrypted channels; if those channels can be spoofed, sensitive prompts, proprietary data, or even generated content could be intercepted or altered. For enterprises that are beginning to embed AI assistants into customer‑facing applications, a compromised TLS layer would expose not only data but also the reputation risk of a breached AI system. The eMudhra case therefore resonates far beyond certificate authorities, touching every organization that trusts AI platforms to handle confidential information.",
+      "OpenAI’s newly announced Decisions API is positioned as a low‑cost, high‑throughput service that returns binary or short‑form decisions for any application. Unlike the full‑scale language models that generate paragraphs of text, the Decisions endpoint is optimized for speed and predictability, making it suitable for real‑time features such as fraud checks, content moderation, or dynamic UI adjustments. The API’s pricing model is designed to keep per‑call costs low, encouraging developers to embed decision‑making directly into edge services rather than routing every request through a larger model. For teams building responsive apps, the Decisions API offers a way to add AI‑driven logic without the latency or expense of a full language model.",
+      "OpenAI also published a description of its Forward Deployed Engineering (FDE) approach, which pairs AI research teams with on‑site engineers who help customers integrate and maintain models in production. FDE staff work directly within a client’s environment, handling everything from data pipelines to model monitoring, and they act as a bridge between rapid AI innovation and the operational rigor required for enterprise deployments. By embedding engineers, OpenAI aims to reduce the gap between prototype and production, ensuring that safety checks, performance tuning, and compliance requirements are addressed early. This model reflects a broader industry trend of providing not just APIs but also dedicated engineering support to manage risk.",
+      "The most visible sign of that trend is Uber’s rollout of ChatGPT Work to more than 30,000 employees. According to the company’s announcement, the internal tool helps teams research, analyze data, draft presentations, and automate complex workflows. By making a conversational AI available across functions—from logistics planning to marketing—Uber hopes to accelerate decision‑making and reduce manual effort. The scale of the deployment also puts pressure on internal security teams to safeguard the data that flows through the AI, enforce access controls, and monitor for unintended model behavior. Uber’s move illustrates how large enterprises are treating AI as a productivity platform rather than a niche experiment.",
+      "Taken together, the eMudhra incident and OpenAI’s product push highlight a tension that many businesses must navigate: the desire for rapid AI adoption versus the need for robust security foundations. While OpenAI’s Decisions API and FDE services lower the barrier to embedding intelligence, they also expand the attack surface if the underlying transport layers are compromised. Enterprises that adopt these tools should treat TLS certificates, key management, and endpoint security with the same diligence they apply to any critical infrastructure. In practice, that means verifying that AI providers follow industry‑standard certificate practices and that internal teams have visibility into how keys are generated, stored, and rotated.",
+      "For readers looking to experiment with AI while keeping security front‑and‑center, a few concrete steps can help. First, audit any third‑party service for TLS compliance, checking for valid certificates and proper key rotation policies. Second, start with low‑risk pilot projects that use the Decisions API for non‑sensitive decisions before moving to full‑scale language models. Third, consider engaging with a Forward Deployed Engineering partner or building an internal \"AI ops\" function to monitor model outputs, usage logs, and data flows. Finally, educate staff on the limits of AI‑generated content and enforce clear data‑handling guidelines. By combining careful infrastructure checks with the right engineering support, organizations can reap the productivity gains of tools like ChatGPT Work without repeating the mistakes that led to the eMudhra fallout."
+    ]
   }
 ]
