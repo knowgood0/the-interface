@@ -6031,5 +6031,58 @@
       "Taken together, the eMudhra incident and OpenAI’s product push highlight a tension that many businesses must navigate: the desire for rapid AI adoption versus the need for robust security foundations. While OpenAI’s Decisions API and FDE services lower the barrier to embedding intelligence, they also expand the attack surface if the underlying transport layers are compromised. Enterprises that adopt these tools should treat TLS certificates, key management, and endpoint security with the same diligence they apply to any critical infrastructure. In practice, that means verifying that AI providers follow industry‑standard certificate practices and that internal teams have visibility into how keys are generated, stored, and rotated.",
       "For readers looking to experiment with AI while keeping security front‑and‑center, a few concrete steps can help. First, audit any third‑party service for TLS compliance, checking for valid certificates and proper key rotation policies. Second, start with low‑risk pilot projects that use the Decisions API for non‑sensitive decisions before moving to full‑scale language models. Third, consider engaging with a Forward Deployed Engineering partner or building an internal \"AI ops\" function to monitor model outputs, usage logs, and data flows. Finally, educate staff on the limits of AI‑generated content and enforce clear data‑handling guidelines. By combining careful infrastructure checks with the right engineering support, organizations can reap the productivity gains of tools like ChatGPT Work without repeating the mistakes that led to the eMudhra fallout."
     ]
+  },
+  {
+    "id": "3068ed44690928bfbb235f1e",
+    "slug": "openais-new-enterprise-tools-decisions-api-forward-deployed-engineering-and-clou",
+    "title": "OpenAI’s New Enterprise Tools: Decisions API, Forward‑Deployed Engineering, and Cloud‑Ready Models",
+    "dek": "OpenAI is rolling out a low‑cost Decisions API, expanding its Forward‑Deployed Engineering model, and making its latest models available on Google Cloud, while Uber pilots ChatGPT Work for tens of thousands of employees.",
+    "category": "industry",
+    "tags": [
+      "OpenAI",
+      "Decisions API",
+      "ChatGPT Work",
+      "Google Cloud",
+      "enterprise AI"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-23T03:00:25.247Z",
+    "updatedAt": "2026-10-23T03:00:25.247Z",
+    "featuredImage": "/images/articles/openais-new-enterprise-tools-decisions-api-forward-deployed-engineering-and-clou.jpg",
+    "featuredImageAlt": "OpenAI logo with stylized lettering on a white background",
+    "imageCredit": "Nicoli Knuth (Projeto Mais+) — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3A1._(Wikimedia_Commons)_Oficina_Imagens%2C_Mem%C3%B3ria_e_Representatividade_Negra.pdf",
+    "sources": [
+      {
+        "name": "Build more responsive apps with the Decisions API",
+        "url": "https://openai.com/index/decisions-api"
+      },
+      {
+        "name": "What FDE means at OpenAI",
+        "url": "https://openai.com/index/forward-deployed-engineering-means"
+      },
+      {
+        "name": "Uber brings ChatGPT Work to all employees with OpenAI",
+        "url": "https://openai.com/index/uber-chatgpt-work-rollout"
+      },
+      {
+        "name": "OpenAI models are coming to Google Cloud",
+        "url": "https://openai.com/index/openai-models-google-cloud"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/decisions-api",
+    "generatedBy": "groq",
+    "body": [
+      "Artificial intelligence is moving from experimental labs into the daily workflows of large companies. In the past few weeks OpenAI announced a suite of new services aimed at making AI more actionable for developers and business users alike. The announcements cover a lightweight Decisions API for rapid inference, a deeper partnership model called Forward‑Deployed Engineering, a broad rollout of ChatGPT Work at Uber, and the availability of OpenAI’s frontier models on Google Cloud. Together they illustrate how the company is shifting from pure research to a full‑stack enterprise platform.",
+      "The Decisions API is positioned as a fast, focused, and low‑cost way for applications to obtain binary or multi‑choice outcomes. Unlike larger language models that generate long text, this endpoint returns a single decision, which can be useful for real‑time recommendation engines, fraud alerts, or automated routing. By trimming the model size and response latency, OpenAI hopes developers can embed decision logic directly into user‑facing services without incurring the compute costs of full‑scale generative models.",
+      "OpenAI’s Forward‑Deployed Engineering (FDE) program is a structured approach to embedding technical expertise inside customer organizations. According to OpenAI’s description, FDE engineers work side‑by‑side with client teams to integrate AI capabilities, customize prompts, and ensure that deployments meet security and compliance standards. The model mirrors a consulting engagement but with a focus on hands‑on engineering, allowing companies to accelerate adoption while retaining control over data and model usage.",
+      "Uber’s internal rollout of ChatGPT Work provides a concrete example of how a large enterprise can leverage OpenAI’s tools at scale. More than 30,000 employees now have access to a suite of AI‑powered features that assist with research, data analysis, presentation creation, and complex workflow automation. The deployment is intended to reduce manual effort, surface insights faster, and free up staff to focus on higher‑value tasks, illustrating the practical productivity gains that AI can deliver in a corporate setting.",
+      "The Uber rollout also highlights the role of Forward‑Deployed Engineering in large‑scale deployments. By pairing OpenAI engineers with Uber’s product and data teams, the company can tailor the ChatGPT Work experience to internal security policies, integrate with existing data pipelines, and provide training that aligns with Uber’s operational standards. This collaborative approach reduces the risk of misconfiguration and helps ensure that AI outputs are reliable and compliant with internal governance.",
+      "In parallel, OpenAI announced that its models are now available through Google Cloud’s Marketplace, specifically within Gemini’s Model Garden. The offering includes frontier models as well as Codex‑based workflows that support code generation and debugging. By packaging the models as managed services, Google Cloud simplifies provisioning, scaling, and monitoring, allowing businesses to consume AI without managing the underlying infrastructure themselves.",
+      "The cloud‑native availability of OpenAI’s models lowers the barrier for organizations that already rely on Google Cloud for their data and compute workloads. Companies can integrate generative AI directly into existing pipelines, benefit from unified billing, and leverage Google’s security controls. At the same time, the decision to host models on a public cloud raises questions about data residency, latency, and cost, which enterprises need to evaluate against on‑premise or hybrid alternatives.",
+      "For readers considering these new tools, the first step is to map business problems to the right level of AI capability. Simple binary decisions may be best served by the Decisions API, while more nuanced content creation or analysis could benefit from ChatGPT Work or Codex workflows. Engaging with OpenAI’s Forward‑Deployed Engineering team can accelerate integration and ensure that security and compliance requirements are met. Finally, evaluating cloud‑based versus self‑hosted deployment options will help organizations balance performance, cost, and data governance as they bring AI into everyday operations."
+    ]
   }
 ]
