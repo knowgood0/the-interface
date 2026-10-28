@@ -6723,5 +6723,59 @@
       "The three announcements underscore a broader trend: AI models are becoming the glue that binds disparate processes into end‑to‑end solutions. Whether it is drafting contracts, fielding voice calls, or hunting for bugs, the same underlying technology can be repurposed with relatively little custom development. This reuse lowers entry barriers for smaller firms and speeds up time‑to‑value. At the same time, the rise of agentic systems raises new governance questions around data privacy, model bias, and the reliability of automated decisions. Companies adopting these tools need robust monitoring, clear escalation paths, and a strategy for updating models as they evolve.",
       "For technology leaders evaluating whether to adopt an agentic operating system, the first step is to map high‑volume, low‑complexity tasks that could be handed to an AI agent. Pilot projects—such as a contract‑review bot or a voice‑assistant for routine support—allow teams to measure speed, accuracy and cost impact before scaling. It is also advisable to partner with vendors that provide transparent model‑performance metrics and easy integration hooks, as Legora, Retell and Check Point have demonstrated. Finally, establish oversight processes that include regular audits of AI output, data‑handling policies, and contingency plans for model failures, ensuring that productivity gains do not come at the expense of compliance or security."
     ]
+  },
+  {
+    "id": "ae8118ebfba125c1f05b226e",
+    "slug": "openai-and-servicenow-deepen-enterprise-ai-ties-raising-the-bar-for-workflow-aut",
+    "title": "OpenAI and ServiceNow Deepen Enterprise AI Ties, Raising the Bar for Workflow Automation",
+    "dek": "A new partnership brings OpenAI’s latest models and agents into ServiceNow’s workflow platform, echoing similar moves in legal and voice‑agent spaces and reshaping how AI sits in the modern organization.",
+    "category": "industry",
+    "tags": [
+      "OpenAI",
+      "ServiceNow",
+      "enterprise AI",
+      "workflow automation",
+      "legal tech",
+      "voice agents"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-28T21:00:26.427Z",
+    "updatedAt": "2026-10-28T21:00:26.427Z",
+    "featuredImage": "/images/articles/openai-and-servicenow-deepen-enterprise-ai-ties-raising-the-bar-for-workflow-aut.jpg",
+    "featuredImageAlt": "Screenshot of ServiceNow workflow builder showing AI‑powered automation steps",
+    "imageCredit": "Wikimedia Foundation — CC BY-SA 4.0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AWikimedia_Foundation_first_quarter_2019-2020_tuning_session_-_Technology.pdf",
+    "sources": [
+      {
+        "name": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+        "url": "https://openai.com/index/openai-servicenow-partnership-expansion"
+      },
+      {
+        "name": "The future of the firm",
+        "url": "https://openai.com/index/the-future-of-the-firm"
+      },
+      {
+        "name": "Legora is building the agentic operating system for legal work",
+        "url": "https://openai.com/index/legora"
+      },
+      {
+        "name": "Retell uses OpenAI models to help power 100M monthly calls",
+        "url": "https://openai.com/index/retell-ai"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "generatedBy": "groq",
+    "body": [
+      "On October 28, OpenAI announced an expansion of its partnership with ServiceNow, the cloud‑based platform that powers IT, HR, customer service and many other enterprise workflows. The deal extends the earlier collaboration by embedding OpenAI’s models and autonomous agents directly into ServiceNow’s workflow engine, making them reachable through both ChatGPT and the Codex coding assistant. The announcement signals a shift from isolated AI experiments toward a more unified, platform‑wide AI experience for business users.",
+      "The technical rollout means that ServiceNow developers can call OpenAI’s language models from within the platform’s low‑code builder, while end‑users can invoke ChatGPT‑style assistants to complete routine tickets, draft responses, or extract data from unstructured sources. Codex, OpenAI’s code‑generation tool, is also being woven into the workflow, allowing the platform to suggest or even write automation scripts on the fly. In practice, a service desk agent could type a natural‑language request and receive a ready‑to‑run workflow that updates a configuration item, logs the change, and notifies stakeholders—all without writing a single line of code.",
+      "For enterprises, the integration promises faster resolution times, reduced manual effort, and a lower barrier to building AI‑enhanced processes. By surfacing powerful language models at the point of work, companies can automate repetitive tasks such as data entry, status checks, and policy compliance checks. The move also aligns with a broader industry trend of embedding AI deeper into operational backbones rather than keeping it as a separate chatbot or analytics layer.",
+      "Legal‑tech startup Legora illustrates how OpenAI’s tools can sit beside professionals rather than replace them. Using ChatGPT and Codex, Legora has built an “agentic operating system” that speeds up contract analysis, drafts standard clauses, and surfaces relevant case law. The company reports that lawyers can now focus on higher‑value strategic work while the AI handles the bulk of document review, a model that mirrors the “AI beside us” concept described in OpenAI’s “Future of the Firm” brief.",
+      "In the voice‑agent arena, Retell has leveraged GPT‑6 Astra to top its internal benchmark for conversational quality. Coupled with Codex, the model helps Retell generate and maintain the code that powers its call‑center bots, contributing to a reported $1.6 million annual revenue run‑rate per employee. The success shows how a single, high‑performing model can drive both product excellence and measurable business outcomes when tightly integrated with a company’s development pipeline.",
+      "OpenAI’s “Future of the Firm” paper outlines three ways AI can embed itself in an organization: beneath the hierarchy as infrastructure, beside workers as collaborative assistants, and between teams as shared knowledge brokers. The ServiceNow expansion is a concrete example of the “beneath” layer, providing the infrastructure that powers AI‑enabled workflows across departments. At the same time, Legora and Retell demonstrate the “beside” and “between” roles, where AI augments professional expertise and connects disparate functions through a common language model.",
+      "While the benefits are compelling, enterprises must weigh security, data governance, and change‑management challenges. Integrating large language models into core workflow systems raises questions about data residency, model hallucinations, and auditability. Companies should work with ServiceNow’s security controls, enforce strict access policies, and establish monitoring to catch unexpected model behavior before it impacts customers or compliance reporting.",
+      "Businesses looking to capitalize on the partnership should start by mapping high‑volume, low‑complexity tasks that could be automated with a language model. A pilot in a single department—such as IT ticket triage or HR onboarding—allows teams to measure time savings and model accuracy. From there, organizations can expand to cross‑functional workflows, leverage Codex to generate automation scripts, and continuously refine prompts based on real‑world feedback. The goal is to embed AI as a reliable, observable layer of the enterprise stack rather than a novelty add‑on."
+    ]
   }
 ]
