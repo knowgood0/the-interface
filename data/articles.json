@@ -6777,5 +6777,55 @@
       "While the benefits are compelling, enterprises must weigh security, data governance, and change‑management challenges. Integrating large language models into core workflow systems raises questions about data residency, model hallucinations, and auditability. Companies should work with ServiceNow’s security controls, enforce strict access policies, and establish monitoring to catch unexpected model behavior before it impacts customers or compliance reporting.",
       "Businesses looking to capitalize on the partnership should start by mapping high‑volume, low‑complexity tasks that could be automated with a language model. A pilot in a single department—such as IT ticket triage or HR onboarding—allows teams to measure time savings and model accuracy. From there, organizations can expand to cross‑functional workflows, leverage Codex to generate automation scripts, and continuously refine prompts based on real‑world feedback. The goal is to embed AI as a reliable, observable layer of the enterprise stack rather than a novelty add‑on."
     ]
+  },
+  {
+    "id": "64117c642270b1c86b98663e",
+    "slug": "ai-is-moving-inside-the-company-legal-ops-voice-agents-and-security-research-get",
+    "title": "AI Is Moving Inside the Company: Legal Ops, Voice Agents, and Security Research Get a Boost",
+    "dek": "OpenAI’s new models are being woven into the fabric of firms—from a legal‑focused operating system to a voice‑agent platform handling millions of calls, and a security tool that speeds up vulnerability research. What the shift means for productivity, risk, and how leaders should act now.",
+    "category": "industry",
+    "tags": [
+      "AI in business",
+      "legal tech",
+      "voice agents",
+      "cybersecurity",
+      "OpenAI"
+    ],
+    "author": "editorial-desk",
+    "status": "published",
+    "articleType": "analysis",
+    "publishedAt": "2026-10-29T03:00:27.752Z",
+    "updatedAt": "2026-10-29T03:00:27.752Z",
+    "featuredImage": "/images/articles/ai-is-moving-inside-the-company-legal-ops-voice-agents-and-security-research-get.jpg",
+    "featuredImageAlt": "Bespoke office desk in black fibreglass, resin, wood and metal by FutureSystems, UK, Made in London in 1999. Museum number W.10-2019",
+    "imageCredit": "14GTR — CC0",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File%3AFuture_Systems_office_desk%2C_V%26A_London.jpg",
+    "sources": [
+      {
+        "name": "Source",
+        "url": "https://openai.com/index/the-future-of-the-firm"
+      }
+    ],
+    "sourceUrl": "https://openai.com/index/the-future-of-the-firm",
+    "generatedBy": "groq",
+    "body": [
+      "OpenAI’s recent \"Future of the Firm\" brief sketches a landscape where artificial intelligence no longer sits on the periphery of an organization but becomes a structural component of the org chart. The idea is that AI can sit beneath managers as data‑processing layers, beside teams as collaborative assistants, and between individuals as real‑time coordinators. This reframing signals a move from occasional tool use to continuous, embedded support that can reshape how work gets done across departments.",
+      "Embedding AI in these ways promises two immediate benefits: speed and focus. Routine data extraction, draft generation, and routine decision‑support can be off‑loaded to models that operate at scale, freeing human workers to concentrate on judgment, creativity, and relationship‑building. At the same time, the constant presence of an AI layer raises questions about oversight, bias, and the need for new governance structures. Companies that treat AI as a permanent teammate rather than a one‑off project are more likely to capture lasting efficiency gains.",
+      "One concrete illustration comes from Legora, a startup building what it calls an \"agentic operating system\" for legal work. Legora integrates OpenAI’s ChatGPT and Codex models to automate contract analysis, document drafting, and routine research. By handling the repetitive parts of legal workflows, the platform lets lawyers spend more time on strategy and client interaction. The company’s public description emphasizes that the AI layer works alongside human counsel rather than replacing it, positioning the technology as a productivity multiplier for law firms and corporate legal departments.",
+      "For the legal sector, the impact is twofold. First, turnaround times for contract review can shrink dramatically, allowing businesses to close deals faster. Second, the skill set required of lawyers shifts toward higher‑order analysis, negotiation, and ethical oversight of AI‑generated content. Firms that adopt such systems need to invest in training, establish clear validation checkpoints, and ensure that any AI‑driven advice is reviewed by qualified professionals to meet professional responsibility standards.",
+      "A different use case shows how AI can scale customer‑facing interactions. Retell, a voice‑agent platform, reports that its deployment of OpenAI’s GPT‑6 Astra model now powers roughly 100 million monthly calls. The model topped Retell’s internal benchmark for voice agents, and the company attributes a $1.6 million annual revenue run rate per employee to the efficiency gains from Codex‑assisted development. This level of scale demonstrates that modern language models can handle high‑volume, real‑time speech tasks with a quality that rivals human operators in many routine scenarios.",
+      "The Retell example highlights both opportunity and caution for call‑center managers. On the upside, AI agents can reduce staffing costs, provide 24/7 coverage, and deliver consistent service scripts. On the downside, organizations must manage data privacy, ensure compliance with regulations such as GDPR or CCPA, and monitor for hallucinations or inappropriate responses that could damage brand reputation. Ongoing monitoring and a clear escalation path to human agents remain essential components of any large‑scale voice‑AI deployment.",
+      "Security teams are also seeing AI woven into their core processes. Check Point’s Daybreak platform leverages OpenAI models to accelerate vulnerability research, allowing analysts to translate raw vulnerability intelligence into actionable customer defenses more quickly. By automating parts of the data‑collection and initial analysis pipeline, Daybreak shortens the time between discovery and protection, which is critical in a threat landscape where exploit windows can be measured in days or hours. The partnership illustrates how generative AI can augment, rather than replace, expert security work.",
+      "For readers in leadership or operational roles, the takeaway is clear: AI is no longer a peripheral experiment but a structural element that can be placed beneath, beside, and between existing teams. Start by mapping high‑volume, low‑complexity tasks in your organization that could benefit from model‑driven automation. Pilot a focused use case—whether it’s contract clause extraction, voice‑based customer support, or vulnerability triage—while establishing governance, validation, and privacy safeguards. As the technology matures, the firms that embed AI responsibly will capture the biggest productivity dividends.",
+      "imageSearchQuery",
+      ":",
+      "office workers using AI assistants",
+      "imageAlt",
+      ":",
+      "Group of office workers interacting with AI-powered digital assistants on screens",
+      "sources",
+      ":",
+      "[object Object],[object Object],[object Object],[object Object]"
+    ]
   }
 ]
